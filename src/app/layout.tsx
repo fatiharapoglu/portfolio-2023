@@ -6,7 +6,7 @@ export const metadata = {
     title: "Fatih Arapoğlu",
     description: "Personal portfolio of Fatih Arapoğlu, made in 2023.",
     keywords: "portfolio, fatih, arapoğlu, fatih arapoğlu, fettan",
-    author: "Fatih Arapoğlu",
+    author: "Fatih Arapoğlu | Full-stack Developer",
 };
 
 const oxygen = localFont({
@@ -30,11 +30,17 @@ const oxygen = localFont({
     display: "swap",
 });
 
+const robotoMono = localFont({
+    src: "../fonts/RobotoMono.ttf",
+    display: "swap",
+    variable: "--font-roboto-mono",
+});
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
             <body
-                className={`${oxygen.className}
+                className={`${oxygen.className} ${robotoMono.variable}
                     scroll-smooth bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-blue-300 selection:text-blue-900`}
             >
                 {children}
