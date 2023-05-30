@@ -1,6 +1,6 @@
 import Introduction from "./Introduction";
 import About from "./About";
-import TechStack from "./TechStack";
+import Toolbox from "./Toolbox";
 import Contact from "./Contact";
 
 export default function Main() {
@@ -8,7 +8,7 @@ export default function Main() {
         <main>
             <Introduction />
             <About />
-            <TechStack />
+            <Toolbox />
             <Contact />
         </main>
     );

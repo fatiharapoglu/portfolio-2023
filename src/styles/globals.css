@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-roboto-mono {
+    font-family: var(--font-roboto-mono);
+}
+
+.list-number {
+    @apply text-lg text-red-200;
+}
+
+.header-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.25s ease-in-out;
+}
+
+.header-visible {
+    transition: transform 0.25s ease-in-out;
+}

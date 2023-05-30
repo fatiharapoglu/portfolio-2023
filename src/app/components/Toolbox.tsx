@@ -1,4 +1,4 @@
-export default function TechStack() {
+export default function Toolbox() {
     return (
         <div>
             <h1>Technologoies I Use</h1>

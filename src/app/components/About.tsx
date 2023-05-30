@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <div>
+        <div id="about">
             <h1>About Me</h1>
             <p>
                 As a Chemical Engineer who has made the exciting transition into the field of software development, I can
