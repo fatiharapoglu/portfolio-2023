@@ -2,4 +2,5 @@
 
 Portfolio
 
-[] Change favicon
+-   [] Change favicon
+-   [] Acknowledge logo
