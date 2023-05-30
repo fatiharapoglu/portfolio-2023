@@ -3,10 +3,10 @@ import localFont from "next/font/local";
 import "../styles/globals.css";
 
 export const metadata = {
-    title: "Fatih Arapoğlu",
+    title: "Fatih Arapoğlu | Full-stack Developer",
     description: "Personal portfolio of Fatih Arapoğlu, made in 2023.",
-    keywords: "portfolio, fatih, arapoğlu, fatih arapoğlu, fettan",
-    author: "Fatih Arapoğlu | Full-stack Developer",
+    keywords: "portfolio, fatih, arapoğlu, arapoglu, fatih arapoglu, fatih arapoğlu, fettan",
+    author: "Fatih Arapoğlu",
 };
 
 const oxygen = localFont({
@@ -41,7 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="en">
             <body
                 className={`${oxygen.className} ${robotoMono.variable}
-                    scroll-smooth bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-blue-300 selection:text-blue-900`}
+                    scroll-smooth bg-slate-800 leading-relaxed text-slate-400 antialiased selection:bg-blue-300 selection:text-blue-900`}
             >
                 {children}
             </body>
