@@ -36,7 +36,7 @@ export default function Header() {
         <header
             className={`${
                 isHidden ? "header-hidden" : "header-visible"
-            } sticky top-0 z-50 flex h-24 w-full items-center justify-between bg-slate-900/90 px-24 text-sm backdrop-blur-sm`}
+            } sticky top-0 z-50 flex h-24 w-full items-center justify-between border-b border-slate-800/90 bg-slate-900/90 px-24 text-sm shadow-sm backdrop-blur-sm`}
         >
             <div onClick={() => smoothScroll("")}>
                 <Image
