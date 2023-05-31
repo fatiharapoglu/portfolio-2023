@@ -1,14 +1,19 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 import logo from "../../../public/logo.png";
 
 export default function Header() {
     const [isHidden, setIsHidden] = useState(false);
 
-    const scrollToTop = () => {
-        document.body.scrollIntoView({ behavior: "smooth", block: "start" });
+    const smoothScroll = (id: string) => {
+        if (!id) {
+            document.body.scrollIntoView({ behavior: "smooth", block: "start" });
+            return;
+        }
+
+        const element = document.getElementById(id);
+        element && element.scrollIntoView({ behavior: "smooth", block: "start" });
     };
 
     useEffect(() => {
@@ -33,38 +38,38 @@ export default function Header() {
                 isHidden ? "header-hidden" : "header-visible"
             } sticky top-0 z-50 flex h-24 w-full items-center justify-between bg-slate-900/90 px-24 text-sm backdrop-blur-sm`}
         >
-            <div onClick={scrollToTop}>
+            <div onClick={() => smoothScroll("")}>
                 <Image
-                    className="h-12 w-12 cursor-pointer rounded-full border border-slate-600 mix-blend-lighten"
+                    className="h-12 w-12 cursor-pointer rounded-full border border-slate-600 mix-blend-lighten transition-all duration-300 hover:scale-105"
                     src={logo}
                     alt="logo"
                 />
             </div>
             <ul className="font-roboto-mono flex items-center gap-8">
-                <li>
-                    <Link href={"#about"}>
+                <li className="transition-colors duration-300 hover:text-red-300">
+                    <button onClick={() => smoothScroll("about")}>
                         <span className="list-number">1.</span> About
-                    </Link>
+                    </button>
                 </li>
-                <li>
-                    <Link href={"#toolbox"}>
+                <li className="transition-colors duration-300 hover:text-red-300">
+                    <button onClick={() => smoothScroll("toolbox")}>
                         <span className="list-number">2.</span> Toolbox
-                    </Link>
+                    </button>
                 </li>
-                <li>
-                    <Link href={"#projects"}>
+                <li className="transition-colors duration-300 hover:text-red-300">
+                    <button onClick={() => smoothScroll("projects")}>
                         <span className="list-number">3.</span> Projects
-                    </Link>
+                    </button>
                 </li>
-                <li>
-                    <Link href={"#resume"}>
+                <li className="transition-colors duration-300 hover:text-red-300">
+                    <button onClick={() => smoothScroll("resume")}>
                         <span className="list-number">4.</span> Resume
-                    </Link>
+                    </button>
                 </li>
-                <li>
-                    <Link href={"#contact"}>
+                <li className="transition-colors duration-300 hover:text-red-300">
+                    <button onClick={() => smoothScroll("contact")}>
                         <span className="list-number">5.</span> Contact
-                    </Link>
+                    </button>
                 </li>
             </ul>
         </header>

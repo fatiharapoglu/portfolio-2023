@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-        <div>
+        <section>
             <h1>Contact</h1>
             <p>Have a question or want to work together? Leave your details and I’ll get back to you as soon as possible.</p>
             <form>
@@ -12,6 +12,6 @@ export default function Contact() {
                 <textarea />
                 <button>Send</button>
             </form>
-        </div>
+        </section>
     );
 }

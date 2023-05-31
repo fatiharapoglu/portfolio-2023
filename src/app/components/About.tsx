@@ -4,8 +4,8 @@ import Title from "./Title";
 
 export default function About() {
     return (
-        <div id="about" className="flex h-screen flex-col justify-center">
-            <Title count={1} title={"About Me"} />
+        <section id="about" className="flex h-screen flex-col justify-center">
+            <Title count={1} title="About Me" />
             <div className="flex justify-between gap-6">
                 <div className="w-3/4 text-justify">
                     <p>
@@ -27,7 +27,7 @@ export default function About() {
                         When I’m not coding, I like to spend my time playing guitar, and story based video games.
                     </p>
                     <strong className="block pt-4">TLDR;</strong>
-                    <ul className="list-inside list-disc pt-4 ">
+                    <ul className="list-inside list-disc pt-4 text-left marker:text-red-200">
                         <li>Deep understanding of complex systems due to the engineering background.</li>
                         <li>
                             Focused on technical expertise in programming languages, web development frameworks, and database
@@ -47,10 +47,10 @@ export default function About() {
                         width={250}
                         height={250}
                         alt={"Picture of me"}
-                        className="rounded-xl border border-slate-600 transition-all hover:translate-y-10 hover:rotate-6 hover:scale-110"
+                        className="rounded-xl border border-slate-600 transition-all hover:translate-y-20 hover:rotate-6 hover:scale-110"
                     />
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

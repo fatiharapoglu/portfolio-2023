@@ -1,6 +1,6 @@
 export default function Toolbox() {
     return (
-        <div>
+        <section>
             <h1>Technologoies I Use</h1>
             <ul>
                 <li>React</li>
@@ -20,6 +20,6 @@ export default function Toolbox() {
                 <li>VS Code</li>
                 <li>Webpack</li>
             </ul>
-        </div>
+        </section>
     );
 }
