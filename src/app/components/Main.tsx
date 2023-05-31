@@ -5,7 +5,7 @@ import Contact from "./Contact";
 
 export default function Main() {
     return (
-        <main>
+        <main className="container mx-auto flex w-2/3 flex-col justify-center">
             <Introduction />
             <About />
             <Toolbox />

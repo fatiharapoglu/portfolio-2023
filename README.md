@@ -4,3 +4,6 @@ Portfolio
 
 -   [] Change favicon
 -   [] Acknowledge logo
+-   [] Acknowledge brittany
+-   [] learn SEO
+-   [] but domain
