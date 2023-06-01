@@ -6,7 +6,7 @@ import Projects from "./Projects";
 
 export default function Main() {
     return (
-        <main className="container mx-auto flex w-3/5 flex-col justify-center">
+        <main className="container mx-auto flex w-3/5 flex-col justify-center gap-48">
             <Introduction />
             <About />
             <Toolbox />

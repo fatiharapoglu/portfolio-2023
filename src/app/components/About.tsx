@@ -47,7 +47,7 @@ export default function About() {
                         width={250}
                         height={250}
                         alt={"Picture of me"}
-                        className="rounded-xl border border-slate-600 transition-all hover:translate-y-20 hover:rotate-6 hover:scale-110"
+                        className="rounded-xl border border-slate-600 shadow-xl transition-all hover:translate-y-20 hover:rotate-6 hover:scale-110"
                     />
                 </div>
             </div>

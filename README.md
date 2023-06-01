@@ -16,3 +16,4 @@ Portfolio
 -   [ ] custom cursor
 -   [ ] add links guitar and steam?
 -   [ ] icons acknowledgements
+-   [ ] add shadows
