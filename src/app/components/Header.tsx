@@ -40,7 +40,7 @@ export default function Header() {
         >
             <div onClick={() => smoothScroll("")}>
                 <Image
-                    className="h-12 w-12 cursor-pointer rounded-full border border-slate-600 mix-blend-lighten transition-all duration-300 hover:scale-105"
+                    className="h-12 w-12 cursor-pointer rounded-full border border-slate-800/90 mix-blend-lighten transition-all duration-300 hover:scale-105"
                     src={logo}
                     alt="logo"
                 />

@@ -14,7 +14,7 @@ export default function ToolCard({ href, src, title, description }: ToolCardProp
             target="_blank"
             className="flex flex-col rounded border border-slate-800/90 p-4 shadow-xl transition hover:bg-slate-800/90"
         >
-            <div className="relative mb-4 h-6 w-6 rounded-full">
+            <div className="mb-4 h-6 w-6 rounded-full">
                 <ReactSVG src={src} className="fill-current text-slate-200" />
             </div>
             <h2 className="font-roboto-mono text-md text-slate-200">{title}</h2>

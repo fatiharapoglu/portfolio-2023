@@ -44,7 +44,7 @@ export default function FeaturedProject({
                 </div>
                 <div className="mt-2 flex gap-4 self-end">
                     <a href={sourceLink} target="_blank" className="transition-all duration-300 hover:scale-110">
-                        <div className="relative h-6 w-6 rounded-full">
+                        <div className="h-6 w-6 rounded-full">
                             <ReactSVG
                                 src="/svg/github-outline.svg"
                                 className="fill-current text-slate-200 transition-colors hover:text-red-200"
@@ -52,7 +52,7 @@ export default function FeaturedProject({
                         </div>
                     </a>
                     <a href={liveLink} target="_blank" className="transition-all hover:scale-110">
-                        <div className="relative h-6 w-6 rounded-full">
+                        <div className="h-6 w-6 rounded-full">
                             <ReactSVG
                                 src="/svg/link.svg"
                                 className="fill-current text-slate-200 transition-colors hover:text-red-200"
@@ -67,7 +67,7 @@ export default function FeaturedProject({
                     alt={title}
                     width={750}
                     height={500}
-                    className="rounded-xl border border-slate-600 shadow-xl brightness-50 transition-all hover:scale-105 hover:brightness-100"
+                    className="rounded-xl border border-slate-800/90 shadow-xl brightness-50 transition-all hover:scale-105 hover:brightness-100"
                 />
             </a>
         </div>
