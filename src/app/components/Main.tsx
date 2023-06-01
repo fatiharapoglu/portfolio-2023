@@ -2,6 +2,7 @@ import Introduction from "./Introduction";
 import About from "./About";
 import Toolbox from "./Toolbox";
 import Contact from "./Contact";
+import Projects from "./Projects";
 
 export default function Main() {
     return (
@@ -9,6 +10,7 @@ export default function Main() {
             <Introduction />
             <About />
             <Toolbox />
+            <Projects />
             <Contact />
         </main>
     );
