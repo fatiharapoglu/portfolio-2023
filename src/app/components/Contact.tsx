@@ -2,6 +2,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 import Title from "./Title";
+import Socials from "./Socials";
 
 export default function Contact() {
     const validationSchema = Yup.object().shape({
@@ -27,11 +28,17 @@ export default function Contact() {
     return (
         <section id="contact">
             <Title count={4} title="What's Next?" />
+            <div className="mb-4 flex flex-col items-center justify-center">
+                <h1 className="mb-4 text-3xl font-bold text-slate-300">Get In Touch</h1>
+                <p className="mb-1">Have a question or want to work together?</p>
+                <p className="mb-4">Connect with me via social media or send me an e-mail.</p>
+                <Socials />
+                <p className="my-8 text-3xl font-bold text-slate-300">OR</p>
+            </div>
             <div className="flex flex-col items-center justify-center">
                 <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
                     <Form className="w-2/5 rounded-xl border border-slate-800/90 p-4 shadow-xl">
-                        <h1 className="mb-4 mt-2 text-center text-3xl font-bold text-slate-300">Get In Touch</h1>
-                        <p className="mb-1 text-center text-sm">Have a question or want to work together?</p>
+                        <h1 className="mb-4 mt-2 text-center text-3xl font-bold text-slate-300">Send a Message</h1>
                         <p className="mb-4 text-center text-sm">
                             Leave your details and I’ll get back to you as soon as possible.
                         </p>
