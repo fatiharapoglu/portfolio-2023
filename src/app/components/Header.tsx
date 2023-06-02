@@ -46,29 +46,24 @@ export default function Header() {
                 />
             </div>
             <ul className="font-roboto-mono flex items-center gap-8">
-                <li className="transition-colors duration-300 hover:text-red-300">
+                <li className="text-slate-300 transition-colors duration-300 hover:text-red-300">
                     <button onClick={() => smoothScroll("about")}>
                         <span className="list-number">1.</span> About
                     </button>
                 </li>
-                <li className="transition-colors duration-300 hover:text-red-300">
+                <li className="text-slate-300 transition-colors duration-300 hover:text-red-300">
                     <button onClick={() => smoothScroll("toolbox")}>
                         <span className="list-number">2.</span> Toolbox
                     </button>
                 </li>
-                <li className="transition-colors duration-300 hover:text-red-300">
+                <li className="text-slate-300 transition-colors duration-300 hover:text-red-300">
                     <button onClick={() => smoothScroll("projects")}>
                         <span className="list-number">3.</span> Projects
                     </button>
                 </li>
-                <li className="transition-colors duration-300 hover:text-red-300">
-                    <button onClick={() => smoothScroll("resume")}>
-                        <span className="list-number">4.</span> Resume
-                    </button>
-                </li>
-                <li className="transition-colors duration-300 hover:text-red-300">
+                <li className="text-slate-300 transition-colors duration-300 hover:text-red-300">
                     <button onClick={() => smoothScroll("contact")}>
-                        <span className="list-number">5.</span> Contact
+                        <span className="list-number">4.</span> Contact
                     </button>
                 </li>
             </ul>

@@ -5,8 +5,8 @@ export default function Toolbox() {
     return (
         <section id="toolbox" className="flex min-h-screen flex-col justify-center">
             <Title count={2} title="Technologies I Use" />
-            <div className="mt-4 flex flex-col gap-4">
-                <h1 className="font-roboto-mono text-xl font-bold">Languages</h1>
+            <div className="flex flex-col gap-4">
+                <h1 className="text-xl font-bold text-slate-300">Languages</h1>
                 <div className="grid grid-cols-6 gap-4">
                     <ToolCard
                         description="Scripting language"
@@ -35,7 +35,7 @@ export default function Toolbox() {
                 </div>
             </div>
             <div className="mt-4 flex flex-col gap-4">
-                <h1 className="mt-4 text-xl font-bold">JavaScript Libraries & Frameworks</h1>
+                <h1 className="mt-4 text-xl font-bold text-slate-300">JavaScript Libraries & Frameworks</h1>
                 <div className="grid grid-cols-6 gap-4">
                     <ToolCard
                         description="JavaScript library"
@@ -64,7 +64,7 @@ export default function Toolbox() {
                 </div>
             </div>
             <div className="mt-4 flex flex-col gap-4">
-                <h1 className="mt-4 text-xl font-bold">CSS Tools & Frameworks</h1>
+                <h1 className="mt-4 text-xl font-bold text-slate-300">CSS Tools & Frameworks</h1>
                 <div className="grid grid-cols-6 gap-4">
                     <ToolCard
                         description="Utility first CSS framework"
@@ -99,7 +99,7 @@ export default function Toolbox() {
                 </div>
             </div>
             <div className="mt-4 flex flex-col gap-4">
-                <h1 className="mt-4 text-xl font-bold">Databases & Back-end Services</h1>
+                <h1 className="mt-4 text-xl font-bold text-slate-300">Databases & Back-end Services</h1>
                 <div className="grid grid-cols-6 gap-4">
                     <ToolCard
                         description="NoSQL database"
@@ -128,7 +128,7 @@ export default function Toolbox() {
                 </div>
             </div>
             <div className="mt-4 flex flex-col gap-4">
-                <h1 className="mt-4 text-xl font-bold">Development Tools</h1>
+                <h1 className="mt-4 text-xl font-bold text-slate-300">Development Tools</h1>
                 <div className="grid grid-cols-6 gap-4">
                     <ToolCard
                         description="TypeScript and Node.js ORM"

@@ -16,7 +16,7 @@ export default function Introduction() {
                 I’m focused on learning everything related to Full-stack Web Development.
             </div>
             <button
-                className="font-roboto-mono mt-4 inline-block self-start rounded border border-slate-800/90 px-8 py-4 shadow-xl transition-all duration-300 hover:bg-slate-800/90"
+                className="font-roboto-mono mt-4 inline-block self-start rounded border border-slate-800/90 px-8 py-4 text-slate-300 shadow-xl transition-all duration-300 hover:bg-slate-800/90"
                 onClick={scrollToProjects}
             >
                 View my projects

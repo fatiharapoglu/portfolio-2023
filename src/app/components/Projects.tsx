@@ -71,7 +71,7 @@ export default function Projects() {
             />
             {!isLoadedMore && (
                 <button
-                    className="font-roboto-mono inline-block self-center rounded border border-slate-800/90 px-8 py-4 shadow-xl transition-all duration-300 hover:bg-slate-800/90"
+                    className="font-roboto-mono inline-block self-center rounded border border-slate-800/90 px-8 py-4 text-slate-300 shadow-xl transition-all duration-300 hover:bg-slate-800/90"
                     onClick={handleLoadMore}
                 >
                     Load more
@@ -127,7 +127,7 @@ export default function Projects() {
                     <a
                         href="https://github.com/fatiharapoglu"
                         target="_blank"
-                        className="font-roboto-mono inline-block self-center rounded border border-slate-800/90 px-8 py-4 shadow-xl transition-all duration-300 hover:bg-slate-800/90"
+                        className="font-roboto-mono inline-block self-center rounded border border-slate-800/90 px-8 py-4 text-slate-300 shadow-xl transition-all duration-300 hover:bg-slate-800/90"
                     >
                         Interested in more? Check out my Github.
                     </a>
