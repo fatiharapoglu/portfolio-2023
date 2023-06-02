@@ -2,12 +2,14 @@ import { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { ToastContainer, toast } from "react-toastify";
+import { ReactSVG } from "react-svg";
 import "react-toastify/dist/ReactToastify.css";
 
 import Title from "./Title";
 import Socials from "./Socials";
 import Image from "next/image";
 import loadingGif from "../../../public/animated-logo-black.gif";
+import { smoothScroll } from "../utilities/scroll";
 
 export default function Contact() {
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -124,6 +126,12 @@ export default function Contact() {
                     </div>
                 )}
             </div>
+            <button className="mx-auto mt-16 flex justify-center" onClick={() => smoothScroll("")}>
+                <ReactSVG
+                    src="/svg/up.svg"
+                    className="fill-current text-slate-200 transition-all duration-300 hover:animate-bounce hover:text-red-200"
+                />
+            </button>
             <ToastContainer />
         </section>
     );

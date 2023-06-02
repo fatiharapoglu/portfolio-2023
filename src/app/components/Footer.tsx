@@ -2,7 +2,7 @@ import { ReactSVG } from "react-svg";
 
 export default function Footer() {
     return (
-        <footer className="font-roboto-mono mb-8 mt-32 flex flex-col items-center text-xs leading-relaxed text-slate-500">
+        <footer className="font-roboto-mono mb-8 mt-16 flex flex-col items-center text-xs leading-relaxed text-slate-500">
             <p>Designed & built by Fatih Arapoğlu © 2023</p>
             <p>
                 with{" "}

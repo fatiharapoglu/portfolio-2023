@@ -2,19 +2,10 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 import logo from "../../../public/logo.png";
+import { smoothScroll } from "../utilities/scroll";
 
 export default function Header() {
     const [isHidden, setIsHidden] = useState(false);
-
-    const smoothScroll = (id: string) => {
-        if (!id) {
-            document.body.scrollIntoView({ behavior: "smooth", block: "start" });
-            return;
-        }
-
-        const element = document.getElementById(id);
-        element && element.scrollIntoView({ behavior: "smooth", block: "start" });
-    };
 
     useEffect(() => {
         let prevScrollPos = window.pageYOffset;
