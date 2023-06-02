@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { Tilt } from "react-tilt";
 
 import Title from "./Title";
+import { defaultTiltOptions } from "../utilities/defaultTiltOptions";
 
 export default function About() {
     return (
@@ -28,13 +30,15 @@ export default function About() {
                     </p>
                 </div>
                 <div>
-                    <Image
-                        src="/me.jpeg"
-                        width={250}
-                        height={250}
-                        alt={"Picture of me"}
-                        className="rounded-xl border border-slate-600 shadow-xl transition-all hover:translate-y-20 hover:rotate-6 hover:scale-110"
-                    />
+                    <Tilt options={{ ...defaultTiltOptions, scale: 1.15 }}>
+                        <Image
+                            src="/me.jpeg"
+                            width={250}
+                            height={250}
+                            alt={"Picture of me"}
+                            className="rounded-xl border border-slate-600 shadow-xl"
+                        />
+                    </Tilt>
                 </div>
             </div>
         </section>

@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { ReactSVG } from "react-svg";
+import { Tilt } from "react-tilt";
+
+import { defaultTiltOptions } from "../utilities/defaultTiltOptions";
 
 interface FeaturedProjectProps {
     liveLink: string;
@@ -61,15 +64,17 @@ export default function FeaturedProject({
                     </a>
                 </div>
             </div>
-            <a href={liveLink} target="_blank">
-                <Image
-                    src={imageSrc}
-                    alt={title}
-                    width={750}
-                    height={500}
-                    className="rounded-xl border border-slate-800/90 shadow-xl brightness-50 transition-all hover:scale-105 hover:brightness-100"
-                />
-            </a>
+            <Tilt options={defaultTiltOptions}>
+                <a href={liveLink} target="_blank">
+                    <Image
+                        src={imageSrc}
+                        alt={title}
+                        width={750}
+                        height={500}
+                        className="rounded-xl border border-slate-800/90 shadow-xl brightness-75 transition-all hover:brightness-100"
+                    />
+                </a>
+            </Tilt>
         </div>
     );
 }

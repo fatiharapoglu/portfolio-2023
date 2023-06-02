@@ -1,6 +1,6 @@
 # portfolio-2023
 
-Portfolio
+## Development
 
 -   [x] Change favicon
 -   [x] react query logo
@@ -9,6 +9,7 @@ Portfolio
 -   [x] better alert for contact
 -   [x] add arrow to top
 -   [x] custom cursor
+-   [x] tilting effect on images
 -   [ ] Acknowledge logo
 -   [ ] Acknowledge brittany
 -   [ ] learn SEO
@@ -22,3 +23,10 @@ Portfolio
 -   [ ] headless cms for contact messages?
 -   [ ] look at google keep notes
 -   [ ] change 2x project aligns
+
+## Roadmap
+
+-   [ ] blog-ish
+-   [ ] thoughts section
+-   [ ] cat gallery
+-   [ ] es
