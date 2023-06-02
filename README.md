@@ -8,6 +8,7 @@ Portfolio
 -   [x] add shadows
 -   [x] better alert for contact
 -   [x] add arrow to top
+-   [x] custom cursor
 -   [ ] Acknowledge logo
 -   [ ] Acknowledge brittany
 -   [ ] learn SEO
@@ -16,8 +17,8 @@ Portfolio
 -   [ ] animate on scroll
 -   [ ] responsive design
 -   [ ] oxygen font acknowledgement
--   [ ] custom cursor
 -   [ ] add links guitar and steam?
 -   [ ] icons acknowledgements
 -   [ ] headless cms for contact messages?
 -   [ ] look at google keep notes
+-   [ ] change 2x project aligns

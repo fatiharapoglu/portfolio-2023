@@ -11,10 +11,21 @@
 }
 
 .header-hidden {
-    transform: translateY(-100%);
-    transition: transform 0.25s ease-in-out;
+    @apply -translate-y-full transition-transform duration-300;
 }
 
 .header-visible {
-    transition: transform 0.25s ease-in-out;
+    @apply transition-transform duration-300;
+}
+
+::-webkit-scrollbar {
+    @apply w-3;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-slate-900;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply rounded bg-red-200 hover:bg-red-300;
 }
