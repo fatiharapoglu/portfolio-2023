@@ -17,12 +17,27 @@ export default function Contact() {
         message: "",
     };
 
-    const handleSubmit = (
+    const sendMessage = async (values: string) => {
+        const response = await fetch(`/api/contact`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: values,
+        });
+        return response.json();
+    };
+
+    const handleSubmit = async (
         values: { name: string; email: string; message: string },
         { resetForm }: { resetForm: () => void }
     ) => {
-        console.log(values);
-        resetForm();
+        const res = await sendMessage(JSON.stringify(values));
+        if (res.success) {
+            resetForm();
+            return alert("Message sent successfully.");
+        }
+        alert("Something went wrong while sending the message. Please try again.");
     };
 
     return (

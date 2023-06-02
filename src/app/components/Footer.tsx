@@ -31,19 +31,17 @@ export default function Footer() {
                 </a>
                 .
             </p>
-            <p>
-                <a
-                    href="https://github.com/fatiharapoglu/portfolio-2023/"
-                    target="_blank"
-                    className="flex items-center justify-center gap-2 transition-colors duration-300 hover:text-red-200"
-                >
-                    Source code
-                    <ReactSVG
-                        src="/svg/github-outline.svg"
-                        className="w-5 rounded-full fill-current text-slate-200 transition-all duration-300 hover:scale-110 hover:text-red-200"
-                    />
-                </a>
-            </p>
+            <a
+                href="https://github.com/fatiharapoglu/portfolio-2023/"
+                target="_blank"
+                className="flex items-center justify-center gap-2 transition-colors duration-300 hover:text-red-200"
+            >
+                Source code
+                <ReactSVG
+                    src="/svg/github-outline.svg"
+                    className="w-5 rounded-full fill-current text-slate-200 transition-all duration-300 hover:scale-110 hover:text-red-200"
+                />
+            </a>
         </footer>
     );
 }
