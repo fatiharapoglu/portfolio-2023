@@ -11,6 +11,8 @@
 -   [x] custom cursor
 -   [x] tilting effect on images
 -   [x] change 2x project aligns
+-   [x] make header smaller
+-   [ ] better about page...
 -   [ ] animate on scroll
 -   [ ] {} dont forget the curlies
 -   [ ] add links guitar and steam?

@@ -6,10 +6,10 @@ import { defaultTiltOptions } from "../utilities/defaultTiltOptions";
 
 export default function About() {
     return (
-        <section id="about" className="flex h-screen flex-col justify-center">
+        <section id="about" className="flex h-screen flex-col">
             <Title count={1} title="About Me" />
-            <div className="flex justify-between gap-6">
-                <div className="w-3/4 text-justify">
+            <div className="flex justify-between gap-4">
+                <div className="w-7/12 text-justify">
                     <p>
                         As a Chemical Engineer who has made the exciting transition into the field of software development, I
                         can bring a unique combination of analytical thinking, problem solving skills, and a passion for
@@ -29,17 +29,15 @@ export default function About() {
                         When I’m not coding, I like to spend my time playing guitar, and story based video games.
                     </p>
                 </div>
-                <div>
-                    <Tilt options={{ ...defaultTiltOptions, scale: 1.15 }}>
-                        <Image
-                            src="/me.jpeg"
-                            width={250}
-                            height={250}
-                            alt={"Picture of me"}
-                            className="rounded-xl border border-slate-600 shadow-xl"
-                        />
-                    </Tilt>
-                </div>
+                <Tilt options={defaultTiltOptions} className="relative mt-2 flex w-5/12 items-start justify-center">
+                    <Image
+                        src="/me.jpeg"
+                        width={350}
+                        height={350}
+                        alt={"Picture of me"}
+                        className="rounded-xl border border-slate-600 shadow-xl"
+                    />
+                </Tilt>
             </div>
         </section>
     );

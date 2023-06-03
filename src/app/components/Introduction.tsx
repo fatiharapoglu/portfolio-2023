@@ -4,7 +4,7 @@ import { smoothScroll } from "../utilities/scroll";
 
 export default function Introduction() {
     return (
-        <section className="flex h-[calc(100vh-6rem)] flex-col justify-center gap-4">
+        <section className="flex h-[calc(100vh-5rem)] flex-col justify-center gap-4">
             <h1 className="font-roboto-mono pb-2 pl-1 text-lg text-red-200">Hello, my name is</h1>
             <div className="text-6xl font-bold text-slate-300">Fatih Arapoğlu.</div>
             <div className="text-6xl font-bold text-slate-400">I build web applications.</div>
