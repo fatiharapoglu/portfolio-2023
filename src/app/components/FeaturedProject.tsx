@@ -11,6 +11,7 @@ interface FeaturedProjectProps {
     builtWith: string[];
     title: string;
     description: string;
+    align?: "left" | "right";
 }
 
 export default function FeaturedProject({
@@ -20,10 +21,11 @@ export default function FeaturedProject({
     builtWith,
     title,
     description,
+    align = "right",
 }: FeaturedProjectProps) {
     return (
         <div className="mb-16 grid grid-cols-2 items-center gap-8">
-            <div className="flex flex-col justify-center gap-4 text-right">
+            <div className={`flex flex-col justify-center gap-4 ${align === "right" ? "text-right" : "text-left"}`}>
                 <h2 className="font-roboto-mono text-sm text-red-200">Featured Project</h2>
                 <a
                     href={liveLink}
@@ -35,7 +37,11 @@ export default function FeaturedProject({
                 <div className="text-md rounded-lg border border-slate-800/90 bg-slate-800/50 p-4 shadow-xl">
                     {description}
                 </div>
-                <div className="font-roboto-mono flex flex-wrap justify-end gap-1 text-xs text-red-200">
+                <div
+                    className={`font-roboto-mono flex flex-wrap gap-1 text-xs text-red-200 ${
+                        align === "right" ? "justify-end" : "justify-start"
+                    }`}
+                >
                     {builtWith.map((tech) => (
                         <span
                             key={`${title}-${tech}`}
@@ -45,7 +51,7 @@ export default function FeaturedProject({
                         </span>
                     ))}
                 </div>
-                <div className="mt-2 flex gap-4 self-end">
+                <div className={`mt-2 flex gap-4 ${align === "right" ? "self-end" : "self-start"}`}>
                     <a href={sourceLink} target="_blank" className="transition-all duration-300 hover:scale-110">
                         <div className="h-6 w-6 rounded-full">
                             <ReactSVG
@@ -64,7 +70,7 @@ export default function FeaturedProject({
                     </a>
                 </div>
             </div>
-            <Tilt options={defaultTiltOptions}>
+            <Tilt options={defaultTiltOptions} className={`${align === "right" ? "order-last" : "order-first"}`}>
                 <a href={liveLink} target="_blank">
                     <Image
                         src={imageSrc}

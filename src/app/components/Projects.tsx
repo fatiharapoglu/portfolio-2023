@@ -34,6 +34,7 @@ export default function Projects() {
                 description="A comprehensive clone of Twitter, with a familiar interface and a range of essential features such as
                 profiles, tweets & replies, followings, likes & retweets, notifications and direct messaging system and
                 more."
+                align="right"
             />
             <FeaturedProject
                 liveLink="https://fatiharapoglu.github.io/photo-tag/"
@@ -42,6 +43,7 @@ export default function Projects() {
                 builtWith={["React.js", "Firebase", "Sass", "React Router", "JavaScript", "Github Pages"]}
                 title="Photo-Tag"
                 description="A photo tagging game of PlayStation Universe. Players select a level and must find 3 hidden characters which are pre-defined. Your score is the time passed and saved when you find all 3 characters. 4 unique PlayStation levels. Leaderboards for all levels that updates in realtime."
+                align="left"
             />
             <FeaturedProject
                 liveLink="https://mern-blog-front-end.netlify.app/"
@@ -60,6 +62,7 @@ export default function Projects() {
                 ]}
                 title="MERN Blog"
                 description="A simple blog built with MERN stack. Headless CMS for admin, CRUD operations on mongoDB database with admin authorization, comment section for each blog post, snackbar feedback, rate limiter for users to comment and more."
+                align="right"
             />
             <FeaturedProject
                 liveLink="https://fatiharapoglu.github.io/battleship/"
@@ -68,6 +71,7 @@ export default function Projects() {
                 builtWith={["JavaScript", "Sass", "Webpack", "Jest", "Github Pages"]}
                 title="Battleship"
                 description="A battleship game built with pure JavaScript. Smart AI that plays similarly to a human without cheating. Ship placement supports drag and drop for better user experience. Announcer text that helps and informs you with certain situations, and more."
+                align="left"
             />
             {!isLoadedMore && (
                 <button

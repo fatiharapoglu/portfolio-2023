@@ -10,19 +10,19 @@
 -   [x] add arrow to top
 -   [x] custom cursor
 -   [x] tilting effect on images
+-   [x] change 2x project aligns
+-   [ ] animate on scroll
+-   [ ] {} dont forget the curlies
+-   [ ] add links guitar and steam?
+-   [ ] responsive design
+-   [ ] headless cms for contact messages?
 -   [ ] Acknowledge logo
 -   [ ] Acknowledge brittany
 -   [ ] learn SEO
 -   [ ] buy domain
--   [ ] {} dont forget the curlies
--   [ ] animate on scroll
--   [ ] responsive design
 -   [ ] oxygen font acknowledgement
--   [ ] add links guitar and steam?
 -   [ ] icons acknowledgements
--   [ ] headless cms for contact messages?
 -   [ ] look at google keep notes
--   [ ] change 2x project aligns
 
 ## Roadmap
 
