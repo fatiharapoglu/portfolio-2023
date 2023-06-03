@@ -87,7 +87,7 @@ export default function Toolbox() {
                 <h1 className="mt-4 text-xl font-bold text-slate-300">CSS Tools & Frameworks</h1>
                 <div className="grid grid-cols-6 gap-4">
                     <ToolCard
-                        description="Utility first CSS framework"
+                        description="CSS framework"
                         href="https://tailwindcss.com/"
                         src="/svg/tailwindcss.svg"
                         title="Tailwind CSS"

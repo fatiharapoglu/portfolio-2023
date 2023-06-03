@@ -6,10 +6,6 @@
     font-family: var(--font-roboto-mono);
 }
 
-.list-number {
-    @apply text-lg text-red-200;
-}
-
 .header-hidden {
     @apply -translate-y-full transition-transform duration-300;
 }

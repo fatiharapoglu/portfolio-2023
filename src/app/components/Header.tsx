@@ -50,7 +50,7 @@ export default function Header() {
                     className="text-slate-300 transition-colors duration-300 hover:text-red-300"
                 >
                     <button onClick={() => smoothScroll("about")}>
-                        <span className="list-number">1.</span> About
+                        <span className="text-red-200">1.</span> About
                     </button>
                 </motion.li>
                 <motion.li
@@ -60,7 +60,7 @@ export default function Header() {
                     className="text-slate-300 transition-colors duration-300 hover:text-red-300"
                 >
                     <button onClick={() => smoothScroll("toolbox")}>
-                        <span className="list-number">2.</span> Toolbox
+                        <span className="text-red-200">2.</span> Toolbox
                     </button>
                 </motion.li>
                 <motion.li
@@ -70,7 +70,7 @@ export default function Header() {
                     className="text-slate-300 transition-colors duration-300 hover:text-red-300"
                 >
                     <button onClick={() => smoothScroll("projects")}>
-                        <span className="list-number">3.</span> Projects
+                        <span className="text-red-200">3.</span> Projects
                     </button>
                 </motion.li>
                 <motion.li
@@ -80,7 +80,7 @@ export default function Header() {
                     className="text-slate-300 transition-colors duration-300 hover:text-red-300"
                 >
                     <button onClick={() => smoothScroll("contact")}>
-                        <span className="list-number">4.</span> Contact
+                        <span className="text-red-200">4.</span> Contact
                     </button>
                 </motion.li>
             </ul>

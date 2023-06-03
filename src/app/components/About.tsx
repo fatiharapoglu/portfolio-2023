@@ -22,15 +22,17 @@ export default function About() {
                         can bring a unique combination of analytical thinking, problem solving skills, and a passion for
                         creating innovative digital solutions. My engineering background has equipped me with o deep
                         understanding of complex systems and the ability to break down challenging problems into manageable
-                        parts. As a self taught web developer, now I am honing my technical expertise in programming
-                        languages, web development frameworks and database technologies to design and develop cutting-edge
-                        applications that meet the needs of users.
+                        parts. As a <strong className="text-slate-300/90">self-taught</strong> web developer, now I’m honing
+                        my technical expertise in programming languages, web development frameworks and database technologies
+                        to design and develop cutting-edge applications that meet the needs of users.
                     </p>
                     <p className="pt-4">
                         In line with my education and experience, I had the opportunity to work with different people, to
-                        take part in a team and to learn how to produce together. For this reason, I will easily adapt. I’m
-                        passionate about learning new technologies and am always looking for new opportunities to learn and
-                        grow.
+                        take part in a team and to learn how to produce together. For this reason, I will easily adapt.{" "}
+                        <strong className="text-slate-300/90">
+                            I’m passionate about learning new technologies and always looking for new opportunities to learn
+                            and grow.
+                        </strong>
                     </p>
                     <p className="pt-4">
                         When I’m not coding, I like to spend my time playing guitar, and story based video games.
