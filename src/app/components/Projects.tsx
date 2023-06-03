@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import FeaturedProject from "./FeaturedProject";
 import Title from "./Title";
@@ -74,12 +75,16 @@ export default function Projects() {
                 align="left"
             />
             {!isLoadedMore && (
-                <button
+                <motion.button
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: true }}
                     className="font-roboto-mono inline-block self-center rounded border border-slate-800/90 px-8 py-4 text-slate-300 shadow-xl transition-all duration-300 hover:bg-slate-800/90"
                     onClick={handleLoadMore}
                 >
                     Load more
-                </button>
+                </motion.button>
             )}
             {isLoadedMore && (
                 <div className="mt-16 flex flex-col">
@@ -91,6 +96,7 @@ export default function Projects() {
                             description="Users can create their own resume and download it in a PDF format."
                             liveLink="https://fatiharapoglu.github.io/cv-generator/"
                             sourceLink="https://github.com/fatiharapoglu/cv-generator/"
+                            animationDelay={0.1}
                         />
                         <SecondaryProject
                             builtWith={["Node.js", "Express.js", "EJS", "Bootstrap", "mongoDB"]}
@@ -98,6 +104,7 @@ export default function Projects() {
                             description="Message board with CRUD operations, user and admin model, premium user privilages."
                             liveLink="https://express-members-only.cyclic.app/"
                             sourceLink="https://github.com/fatiharapoglu/members-only/"
+                            animationDelay={0.2}
                         />
                         <SecondaryProject
                             builtWith={["React.js", "Sass"]}
@@ -105,6 +112,7 @@ export default function Projects() {
                             description="A simple React shopping cart application."
                             liveLink="https://fatiharapoglu.github.io/shop-rgb/"
                             sourceLink="https://github.com/fatiharapoglu/shop-rgb/"
+                            animationDelay={0.3}
                         />
                         <SecondaryProject
                             builtWith={["React.js", "Sass"]}
@@ -112,6 +120,7 @@ export default function Projects() {
                             description="A React memory game of League of Legends. The goal of the game is to avoid clicking the same champion twice."
                             liveLink="https://fatiharapoglu.github.io/memory-lol/"
                             sourceLink="https://github.com/fatiharapoglu/memory-lol/"
+                            animationDelay={0.4}
                         />
                         <SecondaryProject
                             builtWith={["JavaScript", "HTML", "CSS"]}
@@ -119,6 +128,7 @@ export default function Projects() {
                             description="A comprehensive To-do app created with pure JavaScript, HTML and CSS."
                             liveLink="https://fatiharapoglu.github.io/to-do/"
                             sourceLink="https://github.com/fatiharapoglu/to-do/"
+                            animationDelay={0.5}
                         />
                         <SecondaryProject
                             builtWith={["JavaScript", "Webpack", "Sass"]}
@@ -126,15 +136,20 @@ export default function Projects() {
                             description="Geolocation supporting weather app that gives forecast for the next 5 days, built with OpenWeatherMap API."
                             liveLink="https://fatiharapoglu.github.io/weather/"
                             sourceLink="https://github.com/fatiharapoglu/weather/"
+                            animationDelay={0.6}
                         />
                     </section>
-                    <a
+                    <motion.a
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                        viewport={{ once: true }}
                         href="https://github.com/fatiharapoglu"
                         target="_blank"
                         className="font-roboto-mono inline-block self-center rounded border border-slate-800/90 px-8 py-4 text-slate-300 shadow-xl transition-all duration-300 hover:bg-slate-800/90"
                     >
                         Interested in more? Check out my Github.
-                    </a>
+                    </motion.a>
                 </div>
             )}
         </section>

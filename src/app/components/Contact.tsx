@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { ToastContainer, toast } from "react-toastify";
@@ -58,15 +59,34 @@ export default function Contact() {
     return (
         <section id="contact">
             <Title count={4} title="What's Next?" />
-            <div className="mb-4 flex flex-col items-center justify-center">
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="mb-4 flex flex-col items-center justify-center"
+            >
                 <h1 className="mb-4 text-3xl font-bold text-slate-300">Get In Touch</h1>
                 <p className="mb-1">Have a question or want to work together?</p>
                 <p className="mb-4">Connect with me via social media or send me an e-mail.</p>
                 <Socials />
-                <p className="my-8 text-3xl font-bold text-slate-300">OR</p>
-            </div>
-
-            <div className="mx-auto flex w-2/5 flex-col items-center justify-center rounded-xl border border-slate-800/90 p-4 shadow-xl">
+            </motion.div>
+            <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.75 }}
+                viewport={{ once: true }}
+                className="my-8 text-center text-3xl font-bold text-slate-300"
+            >
+                OR
+            </motion.p>
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 1.25 }}
+                viewport={{ once: true }}
+                className="mx-auto flex w-2/5 flex-col items-center justify-center rounded-xl border border-slate-800/90 p-4 shadow-xl"
+            >
                 {!isSubmitting ? (
                     <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
                         <Form>
@@ -125,13 +145,20 @@ export default function Contact() {
                         <Image src={loadingGif} alt="loading" className="w-48 mix-blend-lighten" />
                     </div>
                 )}
-            </div>
-            <button className="mx-auto mt-16 flex justify-center" onClick={() => smoothScroll("")}>
+            </motion.div>
+            <motion.button
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 1 }}
+                viewport={{ once: true }}
+                className="mx-auto mt-16 flex justify-center"
+                onClick={() => smoothScroll("")}
+            >
                 <ReactSVG
                     src="/svg/up.svg"
                     className="fill-current text-slate-200 transition-all duration-300 hover:animate-bounce hover:text-red-200"
                 />
-            </button>
+            </motion.button>
             <ToastContainer />
         </section>
     );

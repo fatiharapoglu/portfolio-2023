@@ -1,8 +1,15 @@
 import { ReactSVG } from "react-svg";
+import { motion } from "framer-motion";
 
 export default function Footer() {
     return (
-        <footer className="font-roboto-mono mb-8 mt-16 flex flex-col items-center text-xs leading-relaxed text-slate-500">
+        <motion.footer
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="font-roboto-mono mb-8 mt-16 flex flex-col items-center text-xs leading-relaxed text-slate-500"
+        >
             <p>Designed & built by Fatih Arapoğlu © 2023</p>
             <p>
                 with{" "}
@@ -42,6 +49,6 @@ export default function Footer() {
                     className="w-5 rounded-full fill-current text-slate-200 transition-all duration-300 hover:scale-110 hover:text-red-200"
                 />
             </a>
-        </footer>
+        </motion.footer>
     );
 }

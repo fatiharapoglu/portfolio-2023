@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ReactSVG } from "react-svg";
 import { Tilt } from "react-tilt";
+import { motion } from "framer-motion";
 
 import { defaultTiltOptions } from "../utilities/defaultTiltOptions";
 
@@ -25,7 +26,13 @@ export default function FeaturedProject({
 }: FeaturedProjectProps) {
     return (
         <div className="mb-16 grid grid-cols-2 items-center gap-8">
-            <div className={`flex flex-col justify-center gap-4 ${align === "right" ? "text-right" : "text-left"}`}>
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+                className={`flex flex-col justify-center gap-4 ${align === "right" ? "text-right" : "text-left"}`}
+            >
                 <h2 className="font-roboto-mono text-sm text-red-200">Featured Project</h2>
                 <a
                     href={liveLink}
@@ -69,17 +76,24 @@ export default function FeaturedProject({
                         </div>
                     </a>
                 </div>
-            </div>
+            </motion.div>
             <Tilt options={defaultTiltOptions} className={`${align === "right" ? "order-last" : "order-first"}`}>
-                <a href={liveLink} target="_blank">
-                    <Image
-                        src={imageSrc}
-                        alt={title}
-                        width={750}
-                        height={500}
-                        className="rounded-xl border border-slate-800/90 shadow-xl brightness-75 transition-all hover:brightness-100"
-                    />
-                </a>
+                <motion.div
+                    initial={{ opacity: 0, y: -30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    viewport={{ once: true }}
+                >
+                    <a href={liveLink} target="_blank">
+                        <Image
+                            src={imageSrc}
+                            alt={title}
+                            width={750}
+                            height={500}
+                            className="rounded-xl border border-slate-800/90 shadow-xl brightness-75 transition-all hover:brightness-100"
+                        />
+                    </a>
+                </motion.div>
             </Tilt>
         </div>
     );

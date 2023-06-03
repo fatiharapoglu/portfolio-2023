@@ -1,4 +1,5 @@
 import { ReactSVG } from "react-svg";
+import { motion } from "framer-motion";
 
 interface SecondaryProjectProps {
     liveLink: string;
@@ -6,11 +7,25 @@ interface SecondaryProjectProps {
     builtWith: string[];
     title: string;
     description: string;
+    animationDelay: number;
 }
 
-export default function SecondaryProject({ liveLink, sourceLink, builtWith, title, description }: SecondaryProjectProps) {
+export default function SecondaryProject({
+    liveLink,
+    sourceLink,
+    builtWith,
+    title,
+    description,
+    animationDelay,
+}: SecondaryProjectProps) {
     return (
-        <div className="flex aspect-square h-full flex-col gap-4 rounded-xl bg-slate-800/50 p-4 shadow-xl">
+        <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: animationDelay }}
+            viewport={{ once: true }}
+            className="flex aspect-square h-full flex-col gap-4 rounded-xl bg-slate-800/50 p-4 shadow-xl"
+        >
             <div className="flex w-full justify-between rounded-full">
                 <ReactSVG src="/svg/app.svg" className="fill-current text-red-200" />
                 <div className="flex gap-4">
@@ -46,6 +61,6 @@ export default function SecondaryProject({ liveLink, sourceLink, builtWith, titl
                     </span>
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 }

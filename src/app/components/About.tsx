@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 
 import Title from "./Title";
@@ -8,7 +9,13 @@ export default function About() {
     return (
         <section id="about" className="flex h-screen flex-col">
             <Title count={1} title="About Me" />
-            <div className="flex justify-between gap-4">
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="flex justify-between gap-4"
+            >
                 <div className="w-7/12 text-justify">
                     <p>
                         As a Chemical Engineer who has made the exciting transition into the field of software development, I
@@ -29,7 +36,7 @@ export default function About() {
                         When I’m not coding, I like to spend my time playing guitar, and story based video games.
                     </p>
                 </div>
-                <Tilt options={defaultTiltOptions} className="relative mt-2 flex w-5/12 items-start justify-center">
+                <Tilt options={defaultTiltOptions} className="mt-2 flex w-5/12 items-start justify-center">
                     <Image
                         src="/me.jpeg"
                         width={350}
@@ -38,7 +45,7 @@ export default function About() {
                         className="rounded-xl border border-slate-600 shadow-xl"
                     />
                 </Tilt>
-            </div>
+            </motion.div>
         </section>
     );
 }

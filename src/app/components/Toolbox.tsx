@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import Title from "./Title";
 import ToolCard from "./ToolCard";
 
@@ -5,7 +7,13 @@ export default function Toolbox() {
     return (
         <section id="toolbox" className="flex min-h-screen flex-col justify-center">
             <Title count={2} title="Technologies I Use" />
-            <div className="flex flex-col gap-4">
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="flex flex-col gap-4"
+            >
                 <h1 className="text-xl font-bold text-slate-300">Languages</h1>
                 <div className="grid grid-cols-6 gap-4">
                     <ToolCard
@@ -33,8 +41,14 @@ export default function Toolbox() {
                         title="CSS3"
                     />
                 </div>
-            </div>
-            <div className="mt-4 flex flex-col gap-4">
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="mt-4 flex flex-col gap-4"
+            >
                 <h1 className="mt-4 text-xl font-bold text-slate-300">JavaScript Libraries & Frameworks</h1>
                 <div className="grid grid-cols-6 gap-4">
                     <ToolCard
@@ -62,8 +76,14 @@ export default function Toolbox() {
                         title="Express.js"
                     />
                 </div>
-            </div>
-            <div className="mt-4 flex flex-col gap-4">
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="mt-4 flex flex-col gap-4"
+            >
                 <h1 className="mt-4 text-xl font-bold text-slate-300">CSS Tools & Frameworks</h1>
                 <div className="grid grid-cols-6 gap-4">
                     <ToolCard
@@ -97,8 +117,14 @@ export default function Toolbox() {
                         title="Framer Motion"
                     />
                 </div>
-            </div>
-            <div className="mt-4 flex flex-col gap-4">
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="mt-4 flex flex-col gap-4"
+            >
                 <h1 className="mt-4 text-xl font-bold text-slate-300">Databases & Back-end Services</h1>
                 <div className="grid grid-cols-6 gap-4">
                     <ToolCard
@@ -126,8 +152,14 @@ export default function Toolbox() {
                         title="Supabase"
                     />
                 </div>
-            </div>
-            <div className="mt-4 flex flex-col gap-4">
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="mt-4 flex flex-col gap-4"
+            >
                 <h1 className="mt-4 text-xl font-bold text-slate-300">Development Tools</h1>
                 <div className="grid grid-cols-6 gap-4">
                     <ToolCard
@@ -162,7 +194,7 @@ export default function Toolbox() {
                         title="ChatGPT"
                     />
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 }
