@@ -8,9 +8,18 @@ export default function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
-            className="font-roboto-mono mb-8 mt-16 flex flex-col items-center text-xs leading-relaxed text-slate-500"
+            className="font-roboto-mono mb-8 mt-16 flex flex-col items-center text-xs leading-loose text-slate-500"
         >
-            <p>Handcrafted by Fatih Arapoğlu © 2023</p>
+            <p>
+                Handcrafted by{" "}
+                <a
+                    href="https://fatiharapoglu.dev"
+                    className="font-bold text-slate-400 transition-colors duration-300 hover:text-red-200"
+                >
+                    Fatih Arapoğlu
+                </a>{" "}
+                © 2023
+            </p>
             <p>
                 with{" "}
                 <a

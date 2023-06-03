@@ -13,7 +13,7 @@ export default function Projects() {
     };
 
     return (
-        <section id="projects" className="flex min-h-screen flex-col justify-center">
+        <section id="projects" className="flex flex-col justify-center">
             <Title count={3} title="Some Projects I’ve Built" />
             <FeaturedProject
                 liveLink="https://twitter-next13.vercel.app/"

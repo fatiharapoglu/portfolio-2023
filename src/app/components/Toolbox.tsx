@@ -5,7 +5,7 @@ import ToolCard from "./ToolCard";
 
 export default function Toolbox() {
     return (
-        <section id="toolbox" className="flex min-h-screen flex-col justify-center">
+        <section id="toolbox" className="flex flex-col justify-center">
             <Title count={2} title="Technologies I Use" />
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
