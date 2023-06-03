@@ -141,9 +141,15 @@ export default function Contact() {
                         </Form>
                     </Formik>
                 ) : (
-                    <div className="my-28 flex h-full w-full select-none items-center justify-center">
+                    <motion.div
+                        initial={{ opacity: 0, mixBlendMode: "lighten" }}
+                        whileInView={{ opacity: 1, mixBlendMode: "lighten" }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="my-28 flex h-full w-full select-none items-center justify-center"
+                    >
                         <Image src={loadingGif} alt="loading" className="w-48 mix-blend-lighten" />
-                    </div>
+                    </motion.div>
                 )}
             </motion.div>
             <motion.button
