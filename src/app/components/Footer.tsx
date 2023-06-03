@@ -10,7 +10,7 @@ export default function Footer() {
             viewport={{ once: true }}
             className="font-roboto-mono mb-8 mt-16 flex flex-col items-center text-xs leading-relaxed text-slate-500"
         >
-            <p>Designed & built by Fatih Arapoğlu © 2023</p>
+            <p>Handcrafted by Fatih Arapoğlu © 2023</p>
             <p>
                 with{" "}
                 <a

@@ -19,11 +19,11 @@
 }
 
 ::-webkit-scrollbar {
-    @apply w-3;
+    @apply w-2;
 }
 
 ::-webkit-scrollbar-track {
-    @apply bg-slate-900;
+    @apply bg-slate-800;
 }
 
 ::-webkit-scrollbar-thumb {

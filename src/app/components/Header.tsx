@@ -28,7 +28,7 @@ export default function Header() {
         <header
             className={`${
                 isHidden ? "header-hidden" : "header-visible"
-            } sticky top-0 z-50 flex h-20 w-full items-center justify-between border-b border-slate-800/90 bg-slate-900/90 px-24 text-sm shadow-sm backdrop-blur-sm`}
+            } sticky top-0 z-50 flex h-20 w-full items-center justify-between bg-slate-900/90 bg-gradient-to-b from-slate-950/50 to-slate-900/90 px-16 text-sm shadow-sm backdrop-blur-sm`}
         >
             <motion.div
                 initial={{ opacity: 0, mixBlendMode: "lighten" }}

@@ -7,7 +7,7 @@ import { defaultTiltOptions } from "../utilities/defaultTiltOptions";
 
 export default function About() {
     return (
-        <section id="about" className="flex h-screen flex-col">
+        <section id="about" className="flex flex-col">
             <Title count={1} title="About Me" />
             <motion.div
                 initial={{ opacity: 0, y: 30 }}

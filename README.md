@@ -25,6 +25,7 @@
 -   [ ] oxygen font acknowledgement
 -   [ ] icons acknowledgements
 -   [ ] look at google keep notes
+-   [ ] language TR
 
 ## Roadmap
 
@@ -32,3 +33,9 @@
 -   [ ] thoughts section
 -   [ ] cat gallery
 -   [ ] es
+
+-   header something like this from here https://www.adhamdannaway.com/
+-   scroll lock & custom mouse like this https://andrewchmr.com/
+-   about like this https://jmswrnr.com/about
+-   and this https://nitinranganath.com/more
+-   gradient name like this https://pekcan.dev/tr/
