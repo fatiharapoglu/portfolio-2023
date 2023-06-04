@@ -89,7 +89,7 @@ export default function Projects() {
             {isLoadedMore && (
                 <div className="mt-16 flex flex-col">
                     <h1 className="mb-8 text-center text-xl font-bold text-slate-300">Other Noteworthy Projects</h1>
-                    <section className="mb-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                    <section className="mb-8 grid justify-center gap-4 md:grid-cols-2 lg:grid-cols-3">
                         <SecondaryProject
                             builtWith={["React.js"]}
                             title="CV Generator"

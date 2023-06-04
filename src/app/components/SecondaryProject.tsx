@@ -24,7 +24,7 @@ export default function SecondaryProject({
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: animationDelay }}
             viewport={{ once: true }}
-            className="flex h-full flex-col gap-4 rounded-xl bg-slate-800/50 p-4 shadow-xl md:aspect-square"
+            className="flex aspect-square h-full max-w-xs flex-col gap-4 rounded-xl bg-slate-800/50 p-4 shadow-xl md:max-w-none"
         >
             <div className="flex w-full justify-between rounded-full">
                 <ReactSVG src="/svg/app.svg" className="fill-current text-amber-100" />

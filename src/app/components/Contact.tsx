@@ -66,9 +66,11 @@ export default function Contact() {
                 viewport={{ once: true }}
                 className="mb-4 flex flex-col items-center justify-center"
             >
-                <h1 className="mb-4 text-3xl font-bold text-slate-300">Get In Touch</h1>
-                <p className="mb-1">Have a question or want to work together?</p>
-                <p className="mb-4">Connect with me via social media or send me an e-mail.</p>
+                <h1 className="mb-4 text-center text-3xl font-bold text-slate-300">Get In Touch</h1>
+                <p className="mb-1 text-center text-sm md:text-base">Have a question or want to work together?</p>
+                <p className="mb-4 text-center text-sm md:text-base">
+                    Connect with me via social media or send me an e-mail.
+                </p>
                 <Socials />
             </motion.div>
             <motion.p

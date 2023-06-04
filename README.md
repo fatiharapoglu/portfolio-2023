@@ -16,8 +16,8 @@
 -   [x] gradient text webkit clip at least 1.
 -   [x] add three.js like animated background of stars
 -   [x] add links guitar and steam
--   [ ] responsive design
--   [ ] headless cms for contact messages?
+-   [x] responsive design
+-   [ ] headless cms for contact messages? check sanity.io
 -   [ ] Acknowledge logo
 -   [ ] Acknowledge brittany
 -   [ ] learn SEO

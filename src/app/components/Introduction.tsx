@@ -18,7 +18,7 @@ export default function Introduction() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="pb-1 text-3xl font-bold text-slate-300 md:pb-4 md:text-4xl lg:text-6xl"
+                className="pb-1 text-4xl font-bold text-slate-300 md:pb-4 md:text-5xl lg:text-6xl"
             >
                 Fatih Arapoğlu.
             </motion.div>
@@ -26,7 +26,7 @@ export default function Introduction() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="pb-2 text-3xl font-bold text-slate-400 md:pb-6 md:text-5xl lg:text-6xl"
+                className="pb-2 text-4xl font-bold text-slate-400 md:pb-6 md:text-5xl lg:text-6xl"
             >
                 I build web applications,
             </motion.div>
