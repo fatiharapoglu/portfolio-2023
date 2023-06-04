@@ -13,7 +13,8 @@
 -   [x] change 2x project aligns
 -   [x] make header smaller
 -   [x] animate on scroll
--   [ ] gradient names webkit fill at least 1.
+-   [x] gradient text webkit clip at least 1.
+-   [x] add three.js like animated background of stars
 -   [ ] add links guitar and steam and gaze at the stars?
 -   [ ] responsive design
 -   [ ] headless cms for contact messages?
@@ -25,6 +26,7 @@
 -   [ ] icons acknowledgements
 -   [ ] look at google keep notes
 -   [ ] language TR
+-   [ ] https://medium.com/@twineworks acknowledge starfield
 
 ## Roadmap
 

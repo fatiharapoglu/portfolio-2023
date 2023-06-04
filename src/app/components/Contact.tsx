@@ -85,7 +85,7 @@ export default function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.25 }}
                 viewport={{ once: true }}
-                className="mx-auto flex w-2/5 flex-col items-center justify-center rounded-xl border border-slate-800/90 p-4 shadow-xl"
+                className="mx-auto flex w-2/5 flex-col items-center justify-center rounded-xl border border-slate-800/90 bg-slate-900 p-4 shadow-xl"
             >
                 {!isSubmitting ? (
                     <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
@@ -162,7 +162,7 @@ export default function Contact() {
             >
                 <ReactSVG
                     src="/svg/up.svg"
-                    className="fill-current text-slate-200 transition-all duration-300 hover:animate-bounce hover:text-red-200"
+                    className="fill-current p-2 text-slate-200 transition-all duration-300 hover:animate-bounce hover:text-amber-200"
                 />
             </motion.button>
             <ToastContainer />

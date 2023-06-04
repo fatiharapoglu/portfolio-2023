@@ -6,8 +6,9 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import Loading from "./components/Loading";
+import { starField } from "./utilities/starField.js";
 
-export default function Home() {
+export default function HomePage() {
     const [animation, setAnimation] = useState(true);
 
     useEffect(() => {
@@ -18,6 +19,10 @@ export default function Home() {
         return () => {
             clearTimeout(timer);
         };
+    }, []);
+
+    useEffect(() => {
+        starField();
     }, []);
 
     if (animation) return <Loading />;

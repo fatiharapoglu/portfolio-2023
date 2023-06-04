@@ -20,7 +20,7 @@ export default function Toolbox() {
                         description="Scripting language"
                         href="https://www.javascript.com/"
                         src="/svg/javascript.svg"
-                        title="JavaScript"
+                        title="JavaScript (ES6+)"
                     />
                     <ToolCard
                         description="Typed JavaScript superset"
@@ -61,7 +61,7 @@ export default function Toolbox() {
                         description="React.js framework"
                         href="https://nextjs.org/"
                         src="/svg/next.svg"
-                        title="Next.js"
+                        title="Next.js (13+)"
                     />
                     <ToolCard
                         description="JavaScript runtime environment"

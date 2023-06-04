@@ -12,7 +12,7 @@ export default function ToolCard({ href, src, title, description }: ToolCardProp
         <a
             href={href}
             target="_blank"
-            className="flex flex-col rounded border border-slate-800/90 p-4 shadow-xl transition hover:bg-slate-800/90"
+            className="flex flex-col rounded border border-slate-800/90 bg-slate-900 p-4 shadow-xl transition hover:bg-slate-800/90"
         >
             <div className="mb-4 h-6 w-6 rounded-full">
                 <ReactSVG src={src} className="fill-current text-slate-200" />

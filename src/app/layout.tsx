@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 
-import "../styles/globals.css";
+import "../styles/globals.scss";
 
 export const metadata = {
     title: "Fatih Arapoğlu | Full-stack Developer",
@@ -44,6 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     relative overflow-x-hidden scroll-smooth bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-blue-300 selection:text-blue-900`}
             >
                 {children}
+                <canvas id="canvas" className="fixed inset-0 -z-10 h-screen w-screen"></canvas>
             </body>
         </html>
     );

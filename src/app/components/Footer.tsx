@@ -14,7 +14,7 @@ export default function Footer() {
                 Handcrafted by{" "}
                 <a
                     href="https://fatiharapoglu.dev"
-                    className="animated-link font-bold text-slate-400 transition-colors duration-300 hover:text-red-200"
+                    className="animated-link font-bold text-slate-400 transition-colors duration-300 hover:text-amber-100"
                 >
                     Fatih Arapoğlu
                 </a>{" "}
@@ -25,7 +25,7 @@ export default function Footer() {
                 <a
                     href="https://nextjs.org/"
                     target="_blank"
-                    className="animated-link font-bold text-slate-400 transition-colors duration-300 hover:text-red-200"
+                    className="animated-link font-bold text-slate-400 transition-colors duration-300 hover:text-amber-100"
                 >
                     Next.js
                 </a>
@@ -33,7 +33,7 @@ export default function Footer() {
                 <a
                     href="https://tailwindcss.com/"
                     target="_blank"
-                    className="animated-link font-bold text-slate-400 transition-colors duration-300 hover:text-red-200"
+                    className="animated-link font-bold text-slate-400 transition-colors duration-300 hover:text-amber-100"
                 >
                     Tailwind CSS
                 </a>{" "}
@@ -41,7 +41,7 @@ export default function Footer() {
                 <a
                     href="https://vercel.com/"
                     target="_blank"
-                    className="animated-link font-bold text-slate-400 transition-colors duration-300 hover:text-red-200"
+                    className="animated-link font-bold text-slate-400 transition-colors duration-300 hover:text-amber-100"
                 >
                     Vercel
                 </a>
@@ -50,12 +50,12 @@ export default function Footer() {
             <a
                 href="https://github.com/fatiharapoglu/portfolio-2023/"
                 target="_blank"
-                className="flex items-center justify-center gap-2 transition-colors duration-300 hover:text-red-200"
+                className="flex items-center justify-center gap-2 transition-colors duration-300 hover:text-amber-100"
             >
                 <span className="animated-link">Source code</span>
                 <ReactSVG
                     src="/svg/github-outline.svg"
-                    className="w-5 rounded-full fill-current text-slate-200 transition-all duration-300 hover:scale-110 hover:text-red-200"
+                    className="w-5 rounded-full fill-current text-slate-200 transition-all duration-300 hover:scale-110 hover:text-amber-200"
                 />
             </a>
         </motion.footer>

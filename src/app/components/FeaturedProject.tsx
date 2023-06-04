@@ -33,11 +33,11 @@ export default function FeaturedProject({
                 viewport={{ once: true }}
                 className={`flex flex-col justify-center gap-4 ${align === "right" ? "text-right" : "text-left"}`}
             >
-                <h2 className="font-roboto-mono text-sm text-red-200">Featured Project</h2>
+                <h2 className="font-roboto-mono text-sm text-amber-100">Featured Project</h2>
                 <a
                     href={liveLink}
                     target="_blank"
-                    className="text-3xl font-bold text-slate-200 transition-colors duration-300 hover:text-red-300"
+                    className="text-3xl font-bold text-slate-200 transition-colors duration-300 hover:text-amber-200"
                 >
                     {title}
                 </a>
@@ -45,7 +45,7 @@ export default function FeaturedProject({
                     {description}
                 </div>
                 <div
-                    className={`font-roboto-mono flex flex-wrap gap-1 text-xs text-red-200 ${
+                    className={`font-roboto-mono flex flex-wrap gap-1 text-xs text-amber-100 ${
                         align === "right" ? "justify-end" : "justify-start"
                     }`}
                 >
@@ -63,7 +63,7 @@ export default function FeaturedProject({
                         <div className="h-6 w-6 rounded-full">
                             <ReactSVG
                                 src="/svg/github-outline.svg"
-                                className="fill-current text-slate-200 transition-colors hover:text-red-200"
+                                className="fill-current text-slate-200 transition-colors hover:text-amber-100"
                             />
                         </div>
                     </a>
@@ -71,7 +71,7 @@ export default function FeaturedProject({
                         <div className="h-6 w-6 rounded-full">
                             <ReactSVG
                                 src="/svg/link.svg"
-                                className="fill-current text-slate-200 transition-colors hover:text-red-200"
+                                className="fill-current text-slate-200 transition-colors hover:text-amber-100"
                             />
                         </div>
                     </a>
