@@ -36,8 +36,8 @@ export default function Introduction() {
                 transition={{ duration: 0.5, delay: 0.6 }}
                 className="w-2/3 pt-2"
             >
-                I’m a <strong className="text-red-200">Full-stack Developer</strong> who loves to work with modern{" "}
-                <strong className="text-red-200">JavaScript</strong>. My proficiency spans the complete web development
+                I’m a <strong className="text-slate-300">Full-stack Developer</strong> who loves to work with modern{" "}
+                <strong className="text-slate-300">JavaScript</strong>. My proficiency spans the complete web development
                 spectrum, utilizing my diverse background in both chemical engineering and full-stack programming. Currently,
                 I’m focused on learning everything related to Full-stack Web Development.
             </motion.div>

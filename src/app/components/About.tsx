@@ -8,7 +8,7 @@ import { defaultTiltOptions } from "../utilities/defaultTiltOptions";
 export default function About() {
     return (
         <section id="about" className="flex flex-col">
-            <Title count={1} title="About Me" />
+            <Title count={1} title="Why Me?" />
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -35,7 +35,8 @@ export default function About() {
                         </strong>
                     </p>
                     <p className="pt-4">
-                        When I’m not coding, I like to spend my time playing guitar, and story based video games.
+                        When I’m not coding, I like to spend my time playing guitar, story based video games and gazing at
+                        the stars...
                     </p>
                 </div>
                 <Tilt options={defaultTiltOptions} className="mt-2 flex w-5/12 items-start justify-center">

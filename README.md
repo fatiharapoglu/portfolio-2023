@@ -13,9 +13,8 @@
 -   [x] change 2x project aligns
 -   [x] make header smaller
 -   [x] animate on scroll
--   [ ] better about page...
--   [ ] {} dont forget the curlies
--   [ ] add links guitar and steam?
+-   [ ] gradient names webkit fill at least 1.
+-   [ ] add links guitar and steam and gaze at the stars?
 -   [ ] responsive design
 -   [ ] headless cms for contact messages?
 -   [ ] Acknowledge logo
@@ -33,9 +32,5 @@
 -   [ ] thoughts section
 -   [ ] cat gallery
 -   [ ] es
-
--   header something like this from here https://www.adhamdannaway.com/
--   scroll lock & custom mouse like this https://andrewchmr.com/
--   about like this https://jmswrnr.com/about
--   and this https://nitinranganath.com/more
--   gradient name like this https://pekcan.dev/tr/
+-   [ ] about like this https://jmswrnr.com/about
+-   [ ] and this https://nitinranganath.com/more

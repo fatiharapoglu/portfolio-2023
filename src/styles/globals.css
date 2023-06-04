@@ -25,3 +25,25 @@
 ::-webkit-scrollbar-thumb {
     @apply rounded bg-red-200 hover:bg-red-300;
 }
+
+.animated-link {
+    position: relative;
+}
+
+.animated-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    background-color: rgb(252 165 165);
+}
+
+.animated-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

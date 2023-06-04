@@ -14,7 +14,7 @@ export default function Footer() {
                 Handcrafted by{" "}
                 <a
                     href="https://fatiharapoglu.dev"
-                    className="font-bold text-slate-400 transition-colors duration-300 hover:text-red-200"
+                    className="animated-link font-bold text-slate-400 transition-colors duration-300 hover:text-red-200"
                 >
                     Fatih Arapoğlu
                 </a>{" "}
@@ -25,7 +25,7 @@ export default function Footer() {
                 <a
                     href="https://nextjs.org/"
                     target="_blank"
-                    className="font-bold text-slate-400 transition-colors duration-300 hover:text-red-200"
+                    className="animated-link font-bold text-slate-400 transition-colors duration-300 hover:text-red-200"
                 >
                     Next.js
                 </a>
@@ -33,7 +33,7 @@ export default function Footer() {
                 <a
                     href="https://tailwindcss.com/"
                     target="_blank"
-                    className="font-bold text-slate-400 transition-colors duration-300 hover:text-red-200"
+                    className="animated-link font-bold text-slate-400 transition-colors duration-300 hover:text-red-200"
                 >
                     Tailwind CSS
                 </a>{" "}
@@ -41,7 +41,7 @@ export default function Footer() {
                 <a
                     href="https://vercel.com/"
                     target="_blank"
-                    className="font-bold text-slate-400 transition-colors duration-300 hover:text-red-200"
+                    className="animated-link font-bold text-slate-400 transition-colors duration-300 hover:text-red-200"
                 >
                     Vercel
                 </a>
@@ -52,7 +52,7 @@ export default function Footer() {
                 target="_blank"
                 className="flex items-center justify-center gap-2 transition-colors duration-300 hover:text-red-200"
             >
-                Source code
+                <span className="animated-link">Source code</span>
                 <ReactSVG
                     src="/svg/github-outline.svg"
                     className="w-5 rounded-full fill-current text-slate-200 transition-all duration-300 hover:scale-110 hover:text-red-200"

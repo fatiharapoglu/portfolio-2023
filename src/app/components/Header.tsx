@@ -47,40 +47,40 @@ export default function Header() {
                     initial={{ y: -100 }}
                     animate={{ y: 0 }}
                     transition={{ duration: 0.3, delay: 0.75 }}
-                    className="text-slate-300 transition-colors duration-300 hover:text-red-300"
+                    className="animated-link text-slate-300 transition-colors duration-300 hover:text-red-300"
                 >
                     <button onClick={() => smoothScroll("about")}>
-                        <span className="text-red-200">1.</span> About
+                        <span className=" text-red-200">1.</span> About
                     </button>
                 </motion.li>
                 <motion.li
                     initial={{ y: -100 }}
                     animate={{ y: 0 }}
                     transition={{ duration: 0.3, delay: 0.5 }}
-                    className="text-slate-300 transition-colors duration-300 hover:text-red-300"
+                    className="animated-link text-slate-300 transition-colors duration-300 hover:text-red-300"
                 >
                     <button onClick={() => smoothScroll("toolbox")}>
-                        <span className="text-red-200">2.</span> Toolbox
+                        <span className=" text-red-200">2.</span> Toolbox
                     </button>
                 </motion.li>
                 <motion.li
                     initial={{ y: -100 }}
                     animate={{ y: 0 }}
                     transition={{ duration: 0.3, delay: 0.25 }}
-                    className="text-slate-300 transition-colors duration-300 hover:text-red-300"
+                    className="animated-link text-slate-300 transition-colors duration-300 hover:text-red-300"
                 >
                     <button onClick={() => smoothScroll("projects")}>
-                        <span className="text-red-200">3.</span> Projects
+                        <span className=" text-red-200">3.</span> Projects
                     </button>
                 </motion.li>
                 <motion.li
                     initial={{ y: -100 }}
                     animate={{ y: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="text-slate-300 transition-colors duration-300 hover:text-red-300"
+                    className="animated-link text-slate-300 transition-colors duration-300 hover:text-red-300"
                 >
                     <button onClick={() => smoothScroll("contact")}>
-                        <span className="text-red-200">4.</span> Contact
+                        <span className=" text-red-200">4.</span> Contact
                     </button>
                 </motion.li>
             </ul>
