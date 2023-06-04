@@ -5,7 +5,7 @@ import "../styles/globals.scss";
 export const metadata = {
     title: "Fatih Arapoğlu | Full-stack Developer",
     description: "Personal portfolio of Fatih Arapoğlu, made in 2023.",
-    keywords: "portfolio, fatih, arapoğlu, arapoglu, fatih arapoglu, fatih arapoğlu, fettan",
+    keywords: "portfolio, fatih, arapoğlu, arapoglu, fatih arapoglu, fatih arapoğlu, fettan, website",
     author: "Fatih Arapoğlu",
 };
 

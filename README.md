@@ -15,7 +15,7 @@
 -   [x] animate on scroll
 -   [x] gradient text webkit clip at least 1.
 -   [x] add three.js like animated background of stars
--   [ ] add links guitar and steam and gaze at the stars?
+-   [x] add links guitar and steam
 -   [ ] responsive design
 -   [ ] headless cms for contact messages?
 -   [ ] Acknowledge logo
@@ -34,5 +34,3 @@
 -   [ ] thoughts section
 -   [ ] cat gallery
 -   [ ] es
--   [ ] about like this https://jmswrnr.com/about
--   [ ] and this https://nitinranganath.com/more

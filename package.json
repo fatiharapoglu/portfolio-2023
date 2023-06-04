@@ -1,9 +1,15 @@
 {
-    "name": "portfolio-v1",
+    "name": "portfolio-2023",
     "version": "1.0.0",
     "private": true,
     "description": "Personal portfolio made in 2023.",
-    "keywords": [],
+    "keywords": [
+        "Fatih",
+        "Arapoğlu",
+        "fettan",
+        "portfolio",
+        "website"
+    ],
     "author": "Fatih Arapoğlu",
     "license": "MIT",
     "scripts": {

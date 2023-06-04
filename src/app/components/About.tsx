@@ -35,8 +35,23 @@ export default function About() {
                         </strong>
                     </p>
                     <p className="pt-4">
-                        When I’m not coding, I like to spend my time playing guitar, story based video games and gazing at
-                        the stars...
+                        When I’m not coding, I like to spend my time playing{" "}
+                        <a
+                            href="https://www.youtube.com/user/f3tt4n/"
+                            target="_blank"
+                            className="animated-link font-semibold text-slate-300/90 transition-colors duration-300 hover:text-amber-200"
+                        >
+                            guitar
+                        </a>
+                        ,{" "}
+                        <a
+                            href="https://steamcommunity.com/id/f3tt4n/"
+                            target="_blank"
+                            className="animated-link font-semibold text-slate-300/90 transition-colors duration-300 hover:text-amber-200"
+                        >
+                            story based video games
+                        </a>{" "}
+                        and gazing at the stars...
                     </p>
                 </div>
                 <Tilt options={defaultTiltOptions} className="mt-2 flex w-5/12 items-start justify-center">
