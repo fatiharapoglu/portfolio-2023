@@ -14,9 +14,9 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="flex justify-between gap-4"
+                className="flex flex-col justify-between gap-4 xl:flex-row"
             >
-                <div className="w-7/12 text-justify">
+                <div className="text-justify text-sm md:text-base xl:w-7/12">
                     <p>
                         As a Chemical Engineer who has made the exciting transition into the field of software development, I
                         can bring a unique combination of analytical thinking, problem solving skills, and a passion for
@@ -54,7 +54,7 @@ export default function About() {
                         and gazing at the stars...
                     </p>
                 </div>
-                <Tilt options={defaultTiltOptions} className="mt-2 flex w-5/12 items-start justify-center">
+                <Tilt options={defaultTiltOptions} className="mt-2 flex items-start justify-center xl:w-5/12">
                     <Image
                         src="/me.jpeg"
                         width={350}

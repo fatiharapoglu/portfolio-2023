@@ -17,8 +17,8 @@ export default function ToolCard({ href, src, title, description }: ToolCardProp
             <div className="mb-4 h-6 w-6 rounded-full">
                 <ReactSVG src={src} className="fill-current text-slate-200" />
             </div>
-            <h2 className="text-md mb-1 text-slate-200">{title}</h2>
-            <p className="text-sm text-slate-500">{description}</p>
+            <h2 className="mb-1 text-sm text-slate-200 md:text-base">{title}</h2>
+            <p className="text-xs text-slate-500 md:text-sm">{description}</p>
         </a>
     );
 }

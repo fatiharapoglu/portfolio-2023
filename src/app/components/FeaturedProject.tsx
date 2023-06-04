@@ -25,7 +25,7 @@ export default function FeaturedProject({
     align = "right",
 }: FeaturedProjectProps) {
     return (
-        <div className="mb-16 grid grid-cols-2 items-center gap-8">
+        <div className="mb-16 grid items-center gap-8 md:grid-cols-2">
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ export default function FeaturedProject({
                 >
                     {title}
                 </a>
-                <div className="text-md rounded-lg border border-slate-800/90 bg-slate-800/50 p-4 shadow-xl">
+                <div className="rounded-lg border border-slate-800/90 bg-slate-800/50 p-4 text-sm shadow-xl md:text-base">
                     {description}
                 </div>
                 <div
@@ -77,7 +77,7 @@ export default function FeaturedProject({
                     </a>
                 </div>
             </motion.div>
-            <Tilt options={defaultTiltOptions} className={`${align === "right" ? "order-last" : "order-first"}`}>
+            <Tilt options={defaultTiltOptions} className={`${align === "right" ? "md:order-last" : "md:order-first"}`}>
                 <motion.div
                     initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}

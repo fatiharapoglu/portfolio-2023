@@ -7,7 +7,7 @@ export default function Title({ count, title }: { count: number; title: string }
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="mb-16 mt-8 text-center text-4xl font-bold text-slate-300"
+            className="mb-16 mt-8 text-center text-2xl font-bold text-slate-300 md:text-3xl lg:text-4xl"
         >
             <div className="flex items-center">
                 <div className="h-px w-1/2 bg-slate-800/90"></div>

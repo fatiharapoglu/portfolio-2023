@@ -5,12 +5,12 @@ import { smoothScroll } from "../utilities/scroll";
 
 export default function Introduction() {
     return (
-        <section className="flex h-[calc(100vh-5rem)] flex-col justify-center">
+        <section className="flex h-screen flex-col justify-center md:h-[calc(100vh-5rem)]">
             <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="font-roboto-mono pb-6 pl-1 text-lg text-amber-100"
+                className="font-roboto-mono pb-2 text-sm text-amber-100 md:pb-6 md:pl-1 md:text-base lg:text-lg"
             >
                 Hello, my name is
             </motion.h1>
@@ -18,7 +18,7 @@ export default function Introduction() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="pb-4 text-6xl font-bold text-slate-300"
+                className="pb-1 text-3xl font-bold text-slate-300 md:pb-4 md:text-4xl lg:text-6xl"
             >
                 Fatih Arapoğlu.
             </motion.div>
@@ -26,7 +26,7 @@ export default function Introduction() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="pb-6 text-6xl font-bold text-slate-400"
+                className="pb-2 text-3xl font-bold text-slate-400 md:pb-6 md:text-5xl lg:text-6xl"
             >
                 I build web applications,
             </motion.div>
@@ -34,7 +34,7 @@ export default function Introduction() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="bg-gradient-to-r from-sky-300 to-amber-200 bg-clip-text pb-6 text-4xl font-bold text-transparent"
+                className="bg-gradient-to-r from-sky-300 to-amber-200 bg-clip-text pb-2 text-xl font-bold text-transparent md:pb-6 md:text-3xl lg:text-4xl"
             >
                 and I am satisfied only with a beautiful solution.
             </motion.div>
@@ -42,7 +42,7 @@ export default function Introduction() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
-                className="w-2/3"
+                className="w-2/3 text-sm lg:text-base"
             >
                 I’m a <strong className="text-slate-300">Full-stack Developer</strong> who loves to work with modern{" "}
                 <strong className="text-slate-300">JavaScript</strong>. My proficiency spans the complete web development

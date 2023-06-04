@@ -14,8 +14,8 @@ export default function Toolbox() {
                 viewport={{ once: true }}
                 className="flex flex-col gap-4"
             >
-                <h1 className="text-xl font-bold text-slate-300">Languages</h1>
-                <div className="grid grid-cols-6 gap-4">
+                <h1 className="text-center text-xl font-bold text-slate-300 lg:text-left">Languages</h1>
+                <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 xl:grid-cols-6">
                     <ToolCard
                         description="Scripting language"
                         href="https://www.javascript.com/"
@@ -47,10 +47,12 @@ export default function Toolbox() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="mt-4 flex flex-col gap-4"
+                className="mt-8 flex flex-col gap-4"
             >
-                <h1 className="mt-4 text-xl font-bold text-slate-300">JavaScript Libraries & Frameworks</h1>
-                <div className="grid grid-cols-6 gap-4">
+                <h1 className="text-center text-xl font-bold text-slate-300 lg:text-left">
+                    JavaScript Libraries & Frameworks
+                </h1>
+                <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 xl:grid-cols-6">
                     <ToolCard
                         description="JavaScript library"
                         href="https://react.dev/"
@@ -82,10 +84,10 @@ export default function Toolbox() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="mt-4 flex flex-col gap-4"
+                className="mt-8 flex flex-col gap-4"
             >
-                <h1 className="mt-4 text-xl font-bold text-slate-300">CSS Tools & Frameworks</h1>
-                <div className="grid grid-cols-6 gap-4">
+                <h1 className="text-center text-xl font-bold text-slate-300 lg:text-left">CSS Tools & Frameworks</h1>
+                <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 xl:grid-cols-6">
                     <ToolCard
                         description="CSS framework"
                         href="https://tailwindcss.com/"
@@ -123,10 +125,10 @@ export default function Toolbox() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="mt-4 flex flex-col gap-4"
+                className="mt-8 flex flex-col gap-4"
             >
-                <h1 className="mt-4 text-xl font-bold text-slate-300">Databases & Back-end Services</h1>
-                <div className="grid grid-cols-6 gap-4">
+                <h1 className="text-center text-xl font-bold text-slate-300 lg:text-left">Databases & Back-end Services</h1>
+                <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 xl:grid-cols-6">
                     <ToolCard
                         description="NoSQL database"
                         href="https://www.mongodb.com/"
@@ -158,10 +160,10 @@ export default function Toolbox() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="mt-4 flex flex-col gap-4"
+                className="mt-8 flex flex-col gap-4"
             >
-                <h1 className="mt-4 text-xl font-bold text-slate-300">Development Tools</h1>
-                <div className="grid grid-cols-6 gap-4">
+                <h1 className="text-center text-xl font-bold text-slate-300 lg:text-left">Development Tools</h1>
+                <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 xl:grid-cols-6">
                     <ToolCard
                         description="TypeScript and Node.js ORM"
                         href="https://www.prisma.io/"

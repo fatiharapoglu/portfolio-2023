@@ -28,7 +28,7 @@ export default function Header() {
         <header
             className={`${
                 isHidden ? "header-hidden" : "header-visible"
-            } sticky top-0 z-50 flex h-20 w-full items-center justify-between bg-slate-900/90 bg-gradient-to-b from-slate-950/50 to-slate-900/90 px-16 text-sm shadow-sm backdrop-blur-sm`}
+            } sticky top-0 z-50 flex h-16 w-full items-center justify-between bg-slate-900/90 bg-gradient-to-b from-slate-950/50 to-slate-900/90 px-4 text-xs shadow-sm backdrop-blur-sm md:h-20 md:px-20 md:text-sm`}
         >
             <motion.div
                 initial={{ opacity: 0, mixBlendMode: "lighten" }}
@@ -37,12 +37,12 @@ export default function Header() {
                 onClick={() => smoothScroll("")}
             >
                 <Image
-                    className="h-12 w-12 cursor-pointer rounded-full border border-slate-800/90 mix-blend-lighten transition-all duration-1000 hover:rotate-180"
+                    className="h-8 w-8 cursor-pointer rounded-full border border-slate-800/90 mix-blend-lighten transition-all duration-1000 hover:rotate-180 md:h-12 md:w-12"
                     src={logo}
                     alt="logo"
                 />
             </motion.div>
-            <ul className="font-roboto-mono flex items-center gap-8">
+            <ul className="font-roboto-mono flex items-center gap-4 md:gap-8">
                 <motion.li
                     initial={{ y: -100 }}
                     animate={{ y: 0 }}

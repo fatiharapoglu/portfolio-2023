@@ -89,7 +89,7 @@ export default function Projects() {
             {isLoadedMore && (
                 <div className="mt-16 flex flex-col">
                     <h1 className="mb-8 text-center text-xl font-bold text-slate-300">Other Noteworthy Projects</h1>
-                    <section className="mb-8 grid grid-cols-3 gap-4">
+                    <section className="mb-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                         <SecondaryProject
                             builtWith={["React.js"]}
                             title="CV Generator"
@@ -146,7 +146,7 @@ export default function Projects() {
                         viewport={{ once: true }}
                         href="https://github.com/fatiharapoglu"
                         target="_blank"
-                        className="font-roboto-mono inline-block self-center rounded border border-slate-800/90 bg-slate-900 px-8 py-4 text-slate-300 shadow-xl transition-all duration-300 hover:bg-slate-800/90"
+                        className="font-roboto-mono inline-block self-center rounded border border-slate-800/90 bg-slate-900 px-8 py-4 text-xs text-slate-300 shadow-xl transition-all duration-300 hover:bg-slate-800/90 md:text-sm lg:text-base"
                     >
                         Interested in more? Check out my Github.
                     </motion.a>
