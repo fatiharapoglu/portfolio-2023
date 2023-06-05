@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from "react";
 
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
-import Loading from "./components/Loading";
-import { starField } from "./utilities/starField.js";
+import Header from "../components/Header";
+import Main from "../components/Main";
+import Footer from "../components/Footer";
+import Loading from "../components/Loading";
+import { starField } from "../utilities/starField.js";
 
 export default function HomePage() {
     const [animation, setAnimation] = useState(true);

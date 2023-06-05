@@ -1,12 +1,15 @@
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 import Title from "./Title";
 import ToolCard from "./ToolCard";
 
 export default function Toolbox() {
+    const t = useTranslations("Toolbox");
+
     return (
         <section id="toolbox" className="flex flex-col justify-center">
-            <Title count={2} title="Technologies I Use" />
+            <Title count={2} title={t("title")} />
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -14,32 +17,22 @@ export default function Toolbox() {
                 viewport={{ once: true }}
                 className="flex flex-col gap-4"
             >
-                <h1 className="text-center text-xl font-bold text-slate-300 lg:text-left">Languages</h1>
+                <h1 className="text-center text-xl font-bold text-slate-300 lg:text-left">{t("toolbox-2")}</h1>
                 <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 xl:grid-cols-6">
                     <ToolCard
-                        description="Scripting language"
+                        description={t("toolbox-3")}
                         href="https://www.javascript.com/"
                         src="/svg/javascript.svg"
                         title="JavaScript (ES6+)"
                     />
                     <ToolCard
-                        description="Typed JavaScript superset"
+                        description={t("toolbox-4")}
                         href="https://www.typescriptlang.org/"
                         src="/svg/typescript.svg"
                         title="TypeScript"
                     />
-                    <ToolCard
-                        description="Markup language standard"
-                        href="https://html5.org/"
-                        src="/svg/html5.svg"
-                        title="HTML5"
-                    />
-                    <ToolCard
-                        description="Cascading style sheets"
-                        href="https://www.css3.com/"
-                        src="/svg/css3.svg"
-                        title="CSS3"
-                    />
+                    <ToolCard description={t("toolbox-5")} href="https://html5.org/" src="/svg/html5.svg" title="HTML5" />
+                    <ToolCard description={t("toolbox-6")} href="https://www.css3.com/" src="/svg/css3.svg" title="CSS3" />
                 </div>
             </motion.div>
             <motion.div
@@ -49,16 +42,9 @@ export default function Toolbox() {
                 viewport={{ once: true }}
                 className="mt-8 flex flex-col gap-4"
             >
-                <h1 className="text-center text-xl font-bold text-slate-300 lg:text-left">
-                    JavaScript Libraries & Frameworks
-                </h1>
+                <h1 className="text-center text-xl font-bold text-slate-300 lg:text-left">{t("toolbox-7")}</h1>
                 <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 xl:grid-cols-6">
-                    <ToolCard
-                        description="JavaScript library"
-                        href="https://react.dev/"
-                        src="/svg/react.svg"
-                        title="React.js"
-                    />
+                    <ToolCard description={t("toolbox-8")} href="https://react.dev/" src="/svg/react.svg" title="React.js" />
                     <ToolCard
                         description="React.js framework"
                         href="https://nextjs.org/"
@@ -66,7 +52,7 @@ export default function Toolbox() {
                         title="Next.js (13+)"
                     />
                     <ToolCard
-                        description="JavaScript runtime environment"
+                        description={t("toolbox-9")}
                         href="https://nodejs.org/"
                         src="/svg/nodedotjs.svg"
                         title="Node.js"
@@ -86,7 +72,7 @@ export default function Toolbox() {
                 viewport={{ once: true }}
                 className="mt-8 flex flex-col gap-4"
             >
-                <h1 className="text-center text-xl font-bold text-slate-300 lg:text-left">CSS Tools & Frameworks</h1>
+                <h1 className="text-center text-xl font-bold text-slate-300 lg:text-left">{t("toolbox-10")}</h1>
                 <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 xl:grid-cols-6">
                     <ToolCard
                         description="CSS framework"
@@ -95,25 +81,15 @@ export default function Toolbox() {
                         title="Tailwind CSS"
                     />
                     <ToolCard
-                        description="Front-end toolkit"
+                        description={t("toolbox-11")}
                         href="https://getbootstrap.com/"
                         src="/svg/bootstrap.svg"
                         title="Bootstrap"
                     />
+                    <ToolCard description={t("toolbox-12")} href="https://mui.com/" src="/svg/mui.svg" title="Material UI" />
+                    <ToolCard description={t("toolbox-13")} href="https://sass-lang.com/" src="/svg/sass.svg" title="Sass" />
                     <ToolCard
-                        description="React UI library"
-                        href="https://mui.com/"
-                        src="/svg/mui.svg"
-                        title="Material UI"
-                    />
-                    <ToolCard
-                        description="CSS pre-processor"
-                        href="https://sass-lang.com/"
-                        src="/svg/sass.svg"
-                        title="Sass"
-                    />
-                    <ToolCard
-                        description="Animation library"
+                        description={t("toolbox-14")}
                         href="https://www.framer.com/motion/"
                         src="/svg/framer.svg"
                         title="Framer Motion"
@@ -127,16 +103,16 @@ export default function Toolbox() {
                 viewport={{ once: true }}
                 className="mt-8 flex flex-col gap-4"
             >
-                <h1 className="text-center text-xl font-bold text-slate-300 lg:text-left">Databases & Back-end Services</h1>
+                <h1 className="text-center text-xl font-bold text-slate-300 lg:text-left">{t("toolbox-15")}</h1>
                 <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 xl:grid-cols-6">
                     <ToolCard
-                        description="NoSQL database"
+                        description={t("toolbox-16")}
                         href="https://www.mongodb.com/"
                         src="/svg/mongodb.svg"
                         title="MongoDB"
                     />
                     <ToolCard
-                        description="SQL database"
+                        description={t("toolbox-17")}
                         href="https://www.postgresql.org/"
                         src="/svg/postgresql.svg"
                         title="PostgreSQL"
@@ -148,7 +124,7 @@ export default function Toolbox() {
                         title="Firebase"
                     />
                     <ToolCard
-                        description="Firebase alternative"
+                        description={t("toolbox-18")}
                         href="https://supabase.com/"
                         src="/svg/supabase.svg"
                         title="Supabase"
@@ -162,35 +138,30 @@ export default function Toolbox() {
                 viewport={{ once: true }}
                 className="mt-8 flex flex-col gap-4"
             >
-                <h1 className="text-center text-xl font-bold text-slate-300 lg:text-left">Development Tools</h1>
+                <h1 className="text-center text-xl font-bold text-slate-300 lg:text-left">{t("toolbox-19")}</h1>
                 <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 xl:grid-cols-6">
                     <ToolCard
-                        description="TypeScript and Node.js ORM"
+                        description={t("toolbox-20")}
                         href="https://www.prisma.io/"
                         src="/svg/prisma.svg"
                         title="Prisma"
                     />
                     <ToolCard
-                        description="Async state management"
+                        description={t("toolbox-21")}
                         href="https://tanstack.com/query/latest/"
                         src="/svg/reactquery.svg"
                         title="React Query"
                     />
-                    <ToolCard description="Front-end tooling" href="https://vitejs.dev/" src="/svg/vite.svg" title="Vite" />
+                    <ToolCard description={t("toolbox-22")} href="https://vitejs.dev/" src="/svg/vite.svg" title="Vite" />
                     <ToolCard
-                        description="Module bundler"
+                        description={t("toolbox-23")}
                         href="https://webpack.js.org/"
                         src="/svg/webpack.svg"
                         title="Webpack"
                     />
+                    <ToolCard description={t("toolbox-24")} href="https://git-scm.com/" src="/svg/git.svg" title="Git" />
                     <ToolCard
-                        description="Version control system"
-                        href="https://git-scm.com/"
-                        src="/svg/git.svg"
-                        title="Git"
-                    />
-                    <ToolCard
-                        description="OpenAI assistant"
+                        description={t("toolbox-25")}
                         href="https://openai.com/"
                         src="/svg/openai.svg"
                         title="ChatGPT"

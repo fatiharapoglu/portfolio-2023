@@ -1,12 +1,16 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 import logo from "../../../public/logo.png";
 import { smoothScroll } from "../utilities/scroll";
+import LanguageSwitch from "./LanguageSwitch";
 
 export default function Header() {
     const [isHidden, setIsHidden] = useState(false);
+
+    const t = useTranslations("Header");
 
     useEffect(() => {
         let prevScrollPos = window.pageYOffset;
@@ -50,7 +54,8 @@ export default function Header() {
                     className="animated-link text-slate-300 transition-colors duration-300 hover:text-amber-200"
                 >
                     <button onClick={() => smoothScroll("about")}>
-                        <span className=" text-amber-100">1.</span> About
+                        <span className=" text-amber-100">1.</span>
+                        {t("link-1")}
                     </button>
                 </motion.li>
                 <motion.li
@@ -60,7 +65,8 @@ export default function Header() {
                     className="animated-link text-slate-300 transition-colors duration-300 hover:text-amber-200"
                 >
                     <button onClick={() => smoothScroll("toolbox")}>
-                        <span className=" text-amber-100">2.</span> Toolbox
+                        <span className=" text-amber-100">2.</span>
+                        {t("link-2")}
                     </button>
                 </motion.li>
                 <motion.li
@@ -70,7 +76,8 @@ export default function Header() {
                     className="animated-link text-slate-300 transition-colors duration-300 hover:text-amber-200"
                 >
                     <button onClick={() => smoothScroll("projects")}>
-                        <span className=" text-amber-100">3.</span> Projects
+                        <span className=" text-amber-100">3.</span>
+                        {t("link-3")}
                     </button>
                 </motion.li>
                 <motion.li
@@ -80,8 +87,12 @@ export default function Header() {
                     className="animated-link text-slate-300 transition-colors duration-300 hover:text-amber-200"
                 >
                     <button onClick={() => smoothScroll("contact")}>
-                        <span className=" text-amber-100">4.</span> Contact
+                        <span className=" text-amber-100">4.</span>
+                        {t("link-4")}
                     </button>
+                </motion.li>
+                <motion.li initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.3 }}>
+                    <LanguageSwitch />
                 </motion.li>
             </ul>
         </header>

@@ -1,14 +1,17 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
+import { useTranslations } from "next-intl";
 
 import Title from "./Title";
 import { defaultTiltOptions } from "../utilities/defaultTiltOptions";
 
 export default function About() {
+    const t = useTranslations("About");
+
     return (
         <section id="about" className="flex flex-col">
-            <Title count={1} title="Why Me?" />
+            <Title count={1} title={t("title")} />
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -18,30 +21,21 @@ export default function About() {
             >
                 <div className="text-justify text-sm md:text-base xl:w-7/12">
                     <p>
-                        As a Chemical Engineer who has made the exciting transition into the field of software development, I
-                        can bring a unique combination of analytical thinking, problem solving skills, and a passion for
-                        creating innovative digital solutions. My engineering background has equipped me with o deep
-                        understanding of complex systems and the ability to break down challenging problems into manageable
-                        parts. As a <strong className="text-slate-300/90">self-taught</strong> web developer, now I’m honing
-                        my technical expertise in programming languages, web development frameworks and database technologies
-                        to design and develop cutting-edge applications that meet the needs of users.
+                        {t("about-1")}
+                        <strong className="text-slate-300/90">{t("about-2")}</strong>
+                        {t("about-3")}
                     </p>
                     <p className="pt-4">
-                        In line with my education and experience, I had the opportunity to work with different people, to
-                        take part in a team and to learn how to produce together. For this reason, I will easily adapt.{" "}
-                        <strong className="text-slate-300/90">
-                            I’m passionate about learning new technologies and always looking for new opportunities to learn
-                            and grow.
-                        </strong>
+                        {t("about-4")} <strong className="text-slate-300/90">{t("about-5")}</strong>
                     </p>
                     <p className="pt-4">
-                        When I’m not coding, I like to spend my time playing{" "}
+                        {t("about-6")}{" "}
                         <a
                             href="https://www.youtube.com/user/f3tt4n/"
                             target="_blank"
                             className="animated-link font-semibold text-slate-300/90 transition-colors duration-300 hover:text-amber-200"
                         >
-                            guitar
+                            {t("about-7")}
                         </a>
                         ,{" "}
                         <a
@@ -49,9 +43,9 @@ export default function About() {
                             target="_blank"
                             className="animated-link font-semibold text-slate-300/90 transition-colors duration-300 hover:text-amber-200"
                         >
-                            story based video games
+                            {t("about-8")}
                         </a>{" "}
-                        and gazing at the stars...
+                        {t("about-9")}
                     </p>
                 </div>
                 <Tilt options={defaultTiltOptions} className="mt-2 flex items-start justify-center xl:w-5/12">

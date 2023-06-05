@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ReactSVG } from "react-svg";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 import { defaultTiltOptions } from "../utilities/defaultTiltOptions";
 
@@ -24,6 +25,8 @@ export default function FeaturedProject({
     description,
     align = "right",
 }: FeaturedProjectProps) {
+    const t = useTranslations("FeaturedProject");
+
     return (
         <div className="mb-16 grid items-center gap-8 md:grid-cols-2">
             <motion.div
@@ -33,7 +36,7 @@ export default function FeaturedProject({
                 viewport={{ once: true }}
                 className={`flex flex-col justify-center gap-4 ${align === "right" ? "text-right" : "text-left"}`}
             >
-                <h2 className="font-roboto-mono text-sm text-amber-100">Featured Project</h2>
+                <h2 className="font-roboto-mono text-sm text-amber-100">{t("title")}</h2>
                 <a
                     href={liveLink}
                     target="_blank"
