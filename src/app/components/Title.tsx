@@ -11,7 +11,7 @@ export default function Title({ count, title }: { count: number; title: string }
         >
             <div className="flex items-center">
                 <div className="h-px w-1/2 bg-slate-800/90"></div>
-                <span className="pl-4 text-2xl text-amber-100">{count}.</span>
+                <span className="pl-4 text-base text-amber-100 md:text-xl lg:text-2xl">{count}.</span>
                 <span className="whitespace-nowrap px-4">{title}</span>
                 <div className="h-px w-1/2 bg-slate-800/90"></div>
             </div>
