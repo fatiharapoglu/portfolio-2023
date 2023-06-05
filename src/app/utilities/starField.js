@@ -67,7 +67,7 @@ export const starField = () => {
         let elapsed = time - prevTime;
         prevTime = time;
 
-        moveStars(elapsed * 0.025);
+        moveStars(elapsed * 0.033);
 
         clear();
 
@@ -79,8 +79,8 @@ export const starField = () => {
         for (var i = 0; i < count; i++) {
             const star = stars[i];
 
-            const x = cx + star.x / (star.z * 0.00025);
-            const y = cy + star.y / (star.z * 0.00025);
+            const x = cx + star.x / (star.z * 0.00033);
+            const y = cy + star.y / (star.z * 0.00033);
 
             if (x < 0 || x >= w || y < 0 || y >= h) {
                 continue;

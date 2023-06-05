@@ -41,12 +41,12 @@ export default function Header() {
                 onClick={() => smoothScroll("")}
             >
                 <Image
-                    className="h-8 w-8 cursor-pointer rounded-full border border-slate-800/90 mix-blend-lighten transition-all duration-1000 hover:rotate-180 md:h-12 md:w-12"
+                    className="invisible h-4 w-8 cursor-pointer rounded-full border border-slate-800/90 mix-blend-lighten transition-all duration-1000 hover:rotate-180 md:visible md:h-12 md:w-12"
                     src={logo}
                     alt="logo"
                 />
             </motion.div>
-            <ul className="font-roboto-mono flex items-center gap-4 md:gap-8">
+            <ul className="font-roboto-mono flex items-center gap-2 md:gap-8">
                 <motion.li
                     initial={{ y: -100 }}
                     animate={{ y: 0 }}
