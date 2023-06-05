@@ -18,20 +18,18 @@
 -   [x] add links guitar and steam
 -   [x] responsive design
 -   [x] language TR
--   [ ] headless cms for contact messages? check sanity.io
+-   [x] optimize SEO
+-   [x] look at google keep notes
+-   [x] getting problems loading mix blend mode in safari, either try different blend mode, or loading screen into black
+-   [x] buy domain
 -   [ ] Acknowledge logo
 -   [ ] Acknowledge brittany
--   [ ] learn SEO
--   [ ] buy domain
 -   [ ] oxygen font acknowledgement
 -   [ ] icons acknowledgements
--   [ ] look at google keep notes
 -   [ ] https://medium.com/@twineworks acknowledge starfield
--   [ ] getting problems loading mix blend mode in safari, either try different blend mode, or loading screen into black
 
 ## Roadmap
 
--   [ ] blog-ish
--   [ ] thoughts section
--   [ ] cat gallery
--   [ ] es
+-   [ ] headless cms for contact messages. sanity.io ?
+-   [ ] blog-ish thoughts section
+-   [ ] cat gallery & es

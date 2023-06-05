@@ -23,7 +23,7 @@ export default function Introduction() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="pb-1 text-4xl font-bold text-slate-300 md:pb-4 md:text-5xl lg:text-6xl"
             >
-                Fatih Arapoğlu.
+                <strong>Fatih Arapoğlu</strong>.
             </motion.div>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}

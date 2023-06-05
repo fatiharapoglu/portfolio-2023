@@ -19,11 +19,11 @@
 }
 
 ::-webkit-scrollbar-track {
-    @apply bg-slate-800;
+    @apply bg-transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    @apply rounded bg-red-200 hover:bg-red-300;
+    @apply rounded bg-amber-100 hover:bg-amber-200;
 }
 
 .animated-link {
