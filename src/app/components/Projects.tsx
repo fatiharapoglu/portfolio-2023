@@ -79,7 +79,7 @@ export default function Projects() {
                 <motion.button
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.5 }}
+                    transition={{ duration: 1 }}
                     viewport={{ once: true }}
                     className="font-roboto-mono inline-block self-center rounded border border-slate-800/90 bg-slate-900 px-8 py-4 text-slate-300 shadow-xl transition-all duration-300 hover:bg-slate-800/90"
                     onClick={handleLoadMore}
