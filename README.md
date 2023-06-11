@@ -31,6 +31,7 @@ My personal portfolio. Created with **Next.js 13+** and **Tailwind CSS**. Deploy
 -   [Ignis](https://dribbble.com/ignis) ("f" logo provider)
 -   [Simple Icons](https://simpleicons.org/) (SVG Icons provider)
 -   [Slawomir Chodnicki](https://medium.com/@twineworks) (Starfield animation provider)
+-   [Brittany Chiang](https://brittanychiang.com/) (Design inspired by)
 
 ## Contact
 
