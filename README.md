@@ -21,6 +21,7 @@ My personal portfolio. Created with **Next.js 13+** and **Tailwind CSS**. Deploy
 
 ## Roadmap
 
+-   [ ] Add light mode
 -   [ ] Headless cms for contact messages. Maybe sanity.io?
 -   [ ] Blog-ish thoughts section.
 -   [ ] Cat gallery & es.
