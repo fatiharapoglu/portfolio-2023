@@ -28,10 +28,10 @@ export default function HomePage() {
     if (animation) return <Loading />;
 
     return (
-        <div>
+        <>
             <Header />
             <Main />
             <Footer />
-        </div>
+        </>
     );
 }

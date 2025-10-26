@@ -2,15 +2,13 @@
 
 My personal portfolio. Created with **Next.js 13+** and **Tailwind CSS**. Deployed on [**Vercel**](https://vercel.com/).
 
-## ⮕ [https://fatiharapoglu.dev](https://fatiharapoglu.dev)
+## ⮕ [https://fatiharapoglu.com.tr](https://fatiharapoglu.com.tr)
 
 ## Helper Dependencies
 
--   [Prisma](https://www.prisma.io/) for database access and manipulation.
 -   [TypeScript](https://www.typescriptlang.org/) for types.
 -   [Framer Motion](https://www.framer.com/motion/) animation components and utilities.
 -   [Formik](https://formik.org/) form management utilities.
--   [Yup](https://www.npmjs.com/package/yup/) for form validation schemas.
 -   [Next-intl](https://next-intl-docs.vercel.app/) for i18n.
 -   [React-svg](https://www.npmjs.com/package/react-svg/) for converting SVGs into react components.
 -   [React-tilt](https://www.npmjs.com/package/react-tilt/) for tilting effect.
@@ -38,7 +36,7 @@ My personal portfolio. Created with **Next.js 13+** and **Tailwind CSS**. Deploy
 
 ⮕ [LinkedIn](https://www.linkedin.com/in/fatiharapoglu/)
 
-⮕ [Portfolio](https://fatiharapoglu.dev)
+⮕ [Portfolio](https://fatiharapoglu.com.tr)
 
 ## License
 

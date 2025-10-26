@@ -23,3 +23,4 @@
 # Deploy 1.0.0 (June 6, 2023)
 
 -   [x] create changelog md
+-   [x] remove db dependencies, prisma and vercel analytics

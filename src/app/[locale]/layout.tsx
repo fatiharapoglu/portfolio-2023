@@ -1,7 +1,6 @@
 import localFont from "next/font/local";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-import { Analytics } from "@vercel/analytics/react";
 
 import "../../styles/globals.scss";
 
@@ -68,7 +67,6 @@ export default async function RootLayout({
                     {children}
                 </NextIntlClientProvider>
                 <canvas id="canvas" className="fixed inset-0 -z-10 h-screen w-screen"></canvas>
-                <Analytics />
             </body>
         </html>
     );
