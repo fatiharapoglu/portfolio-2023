@@ -17,13 +17,6 @@ My personal portfolio. Created with **Next.js 13+** and **Tailwind CSS**. Deploy
 -   [Prettier](https://prettier.io/) for formatting.
 -   [Sass](https://sass-lang.com/) for SCSS.
 
-## Roadmap
-
--   [ ] Add light mode
--   [ ] Headless cms for contact messages. Maybe sanity.io?
--   [ ] Blog-ish thoughts section.
--   [ ] Cat gallery & es.
-
 ## Acknowledgements
 
 -   [Google Fonts](https://fonts.google.com/) (Oxygen and Roboto Mono fonts provider)
