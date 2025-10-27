@@ -1,6 +1,6 @@
 # Personal Portfolio (2023)
 
-My personal portfolio. Created with **Next.js 13+** and **Tailwind CSS**. Deployed on [**Vercel**](https://vercel.com/).
+My personal portfolio. Created with **Next.js 13+** and **Tailwind CSS**. Self hosted with Coolify.
 
 ## ⮕ [https://fatiharapoglu.com.tr](https://fatiharapoglu.com.tr)
 
