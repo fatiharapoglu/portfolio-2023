@@ -19,7 +19,7 @@ export default function Projects() {
         <section id="projects" className="flex flex-col justify-center">
             <Title count={3} title={t("title")} />
             <FeaturedProject
-                liveLink="https://twitter-next13.vercel.app/"
+                liveLink="https://twitter.fatiharapoglu.com.tr/"
                 sourceLink="https://github.com/fatiharapoglu/twitter/"
                 imageSrc="/screenshots/twitter.png"
                 builtWith={[
