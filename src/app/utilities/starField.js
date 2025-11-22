@@ -1,6 +1,9 @@
 export const starField = () => {
     const canvas = document.getElementById("canvas");
+    if (!canvas) return;
+
     const c = canvas.getContext("2d");
+    if (!c) return;
 
     let w;
     let h;
@@ -31,7 +34,7 @@ export const starField = () => {
         return out;
     };
 
-    let stars = makeStars(10000);
+    let stars = makeStars(2500);
 
     const clear = () => {
         c.fillStyle = "rgb(2 6 23)";
@@ -40,9 +43,10 @@ export const starField = () => {
 
     const putPixel = (x, y, brightness) => {
         const intensity = brightness * 255;
-        const rgb = "rgb(" + intensity + "," + intensity + "," + intensity + ")";
+        const rgb = `rgb(${intensity},${intensity},${intensity})`;
+        const size = 1.75 + brightness * 0.8;
         c.fillStyle = rgb;
-        c.fillRect(x, y, 1, 1);
+        c.fillRect(x, y, size, size);
     };
 
     const moveStars = (distance) => {
