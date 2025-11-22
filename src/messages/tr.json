@@ -22,17 +22,27 @@
     },
     "Projects": {
         "title": "Freelance & Kişisel Proje Çalışmaları",
-        "project-2": "Fettan Anonim Sohbet Platformu (2025)",
-        "project-2-link": "fettan.net",
-        "project-3": "Supabase, Redis, Shadcn/UI, Docker, Coolify, Nginx ve Cloudflare ile self-host edilen Next.js 15/16 tabanlı sosyal platform. Gerçek zamanlı sohbet, hikâye sistemi, moderasyon araçları, rozetler, rastgele eşleşme, analitik, gözlemlenebilirlik ve kötüye kullanım koruması içerir.",
-        "project-4": "LLM Destekli Haber Uygulaması (2024)",
-        "project-4-link": "briefdigest.vercel.app",
-        "project-5": "Kimlik doğrulama, kategoriler, sonsuz akış, yayıncı filtreleri, yer imleri, raporlama, listeler, arama geçmişi ve kullanıcı aktivitelerini içeren full-stack haber platformu.",
-        "project-8": "Daha fazla projeyi ve güncel çalışmalarımı GitHub profilimde bulabilirsiniz.",
-        "project-9": "GitHub işlerimi inceleyin",
-        "project-10": "Twitter Klonu (2023)",
-        "project-10-link": "twitter.fatiharapoglu.com.tr",
-        "project-11": "Tweet, beğeni, retweet, mesajlaşma, bildirim, profil, sonsuz kaydırma, medya yükleme ve SEO uyumlu arayüzlere sahip tam özellikli sosyal medya klonu."
+        "items": {
+            "fettan": {
+                "title": "Fettan Anonim Sohbet Platformu (2025)",
+                "description": "Supabase, Redis, Shadcn/UI, Docker, Coolify, Nginx ve Cloudflare ile self-host edilen Next.js 15/16 tabanlı sosyal platform. Gerçek zamanlı sohbet, hikâye sistemi, moderasyon araçları, rozetler, rastgele eşleşme, analitik, gözlemlenebilirlik ve kötüye kullanım koruması içerir.",
+                "link": "fettan.net"
+            },
+            "news": {
+                "title": "LLM Destekli Haber Uygulaması (2024)",
+                "description": "Kimlik doğrulama, kategoriler, sonsuz akış, yayıncı filtreleri, yer imleri, raporlama, listeler, arama geçmişi ve kullanıcı aktivitelerini içeren full-stack haber platformu.",
+                "link": "briefdigest.vercel.app"
+            },
+            "twitter": {
+                "title": "Twitter Klonu (2023)",
+                "description": "Tweet, beğeni, retweet, mesajlaşma, bildirim, profil, sonsuz kaydırma, medya yükleme ve SEO uyumlu arayüzlere sahip tam özellikli sosyal medya klonu.",
+                "link": "twitter.fatiharapoglu.com.tr"
+            }
+        },
+        "more": {
+            "text": "Daha fazla projeyi ve güncel çalışmalarımı GitHub profilimde bulabilirsiniz.",
+            "link": "GitHub işlerimi inceleyin"
+        }
     },
     "FeaturedProject": {
         "title": "Proje"
@@ -44,24 +54,38 @@
     },
     "EnterpriseSummary": {
         "title": "Çalışma Deneyimi",
-        "volthread-title": "Yazılım & Entegrasyon Geliştiricisi — Volthread Teknoloji A.Ş.",
-        "volthread-meta": "2023 – Güncel | Ankara, Türkiye",
-        "volthread-bullet-1": "Internal İnsan Kaynakları Uygulaması (React + Spring Boot + MongoDB): izin onayları, e-posta şablonları, admin panelleri, CI/CD ve prod dağıtımları.",
-        "volthread-bullet-2": "TOFAŞ: Araç programlarına uygun Angular modülleri ve Spring Boot API’leri.",
-        "volthread-bullet-3": "Şişecam & Ford: MuleSoft tabanlı Salesforce, SAP entegrasyonları",
-        "volthread-bullet-4": "ÇİMSA: Oracle OIC geliştirmeleri, OSB/SOA temasları ve dağıtım kontrol listeleri.",
-        "volthread-bullet-5": "Teknosa, CK Enerji, İBB: Karmaşık SOAP/REST akışları, entegrasyon çözümleri.",
-        "volthread-tags": ["React", "Angular", "Spring Boot", "MongoDB", "MuleSoft", "Salesforce", "Oracle OIC", "Oracle OSB/SOA", "CI/CD"],
-        "odin-title": "Full-Stack Developer — The Odin Project",
-        "odin-meta": "2021 – 2022 | Remote",
-        "odin-bullet-1": "HTML, CSS, JavaScript, React ve Node.js kapsayan kapsamlı bir full-stack eğitiminin tamamlanması.",
-        "odin-bullet-2": "Frontend ve backend projeleriyle stack genelinde uygulamalı beceri geliştirme.",
-        "odin-bullet-3": "Problem çözme ve detay odaklılık için kodlama zorlukları, proje teslimleri.",
-        "odin-bullet-4": "Responsive UI, UX akışları ve veritabanı entegrasyonunu sergileyen proje portföyü oluşturma.",
-        "odin-tags": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Full-stack", "Self-taught"],
-        "ilkalem-title": "Kimya Mühendisi — İlkalem Tic. San. A.Ş.",
-        "ilkalem-meta": "2018 – 2021 | Sakarya, Türkiye",
-        "ilkalem-bullet-1": "MATLAB ile büyük veri setlerinde simülasyon, istatistiksel değerlendirme ve süreç optimizasyonu.",
-        "ilkalem-tags": ["MATLAB", "Proses Tasarımı", "Veri Analizi"]
+        "items": {
+            "volthread": {
+                "title": "Yazılım & Entegrasyon Geliştiricisi — Volthread Teknoloji A.Ş.",
+                "meta": "2023 – Güncel | Ankara, Türkiye",
+                "bullets": [
+                    "Internal İnsan Kaynakları Uygulaması (React + Spring Boot + MongoDB): izin onayları, e-posta şablonları, admin panelleri, CI/CD ve prod dağıtımları.",
+                    "TOFAŞ: Araç programlarına uygun Angular modülleri ve Spring Boot API’leri.",
+                    "Şişecam & Ford: MuleSoft tabanlı Salesforce, SAP entegrasyonları.",
+                    "ÇİMSA: Oracle OIC geliştirmeleri, OSB/SOA temasları ve dağıtım kontrol listeleri.",
+                    "Teknosa, CK Enerji, İBB: Karmaşık SOAP/REST akışları, entegrasyon çözümleri."
+                ],
+                "tags": ["React", "Angular", "Spring Boot", "MongoDB", "MuleSoft", "Salesforce", "Oracle OIC", "Oracle OSB/SOA", "CI/CD"]
+            },
+            "odin": {
+                "title": "Full-Stack Developer — The Odin Project",
+                "meta": "2021 – 2022 | Remote",
+                "bullets": [
+                    "HTML, CSS, JavaScript, React ve Node.js kapsayan kapsamlı bir full-stack eğitiminin tamamlanması.",
+                    "Frontend ve backend projeleriyle stack genelinde uygulamalı beceri geliştirme.",
+                    "Problem çözme ve detay odaklılık için kodlama zorlukları, proje teslimleri.",
+                    "Responsive UI, UX akışları ve veritabanı entegrasyonunu sergileyen proje portföyü oluşturma."
+                ],
+                "tags": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Full-stack", "Self-taught"]
+            },
+            "ilkalem": {
+                "title": "Kimya Mühendisi — İlkalem Tic. San. A.Ş.",
+                "meta": "2018 – 2021 | Sakarya, Türkiye",
+                "bullets": [
+                    "MATLAB ile büyük veri setlerinde simülasyon, istatistiksel değerlendirme ve süreç optimizasyonu."
+                ],
+                "tags": ["MATLAB", "Proses Tasarımı", "Veri Analizi"]
+            }
+        }
     }
 }

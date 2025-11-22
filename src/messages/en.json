@@ -22,17 +22,27 @@
     },
     "Projects": {
         "title": "Freelance & Personal Projects",
-        "project-2": "Fettan – Anonymous Chat Platform (2025)",
-        "project-2-link": "fettan.net",
-        "project-3": "A Next.js 15/16 social platform self-hosted with Supabase, Redis, Shadcn/UI, Docker, Coolify, Nginx, and Cloudflare. Includes realtime chat, stories, moderation tools, badges, random matching, analytics, monitoring, and abuse prevention.",
-        "project-4": "LLM-powered News Application (2024)",
-        "project-4-link": "briefdigest.vercel.app",
-        "project-5": "A full-stack news platform featuring authentication, categories, infinite feed, publisher filtering, bookmarks, reports, lists, search history, user activity tracking, Shadcn components, and server-side filtering.",
-        "project-8": "You can find more projects and recent work on my GitHub profile.",
-        "project-9": "View my GitHub work",
-        "project-10": "Twitter Clone (2023)",
-        "project-10-link": "twitter.fatiharapoglu.com.tr",
-        "project-11": "A fully featured social media clone with tweets, likes, retweets, messaging, notifications, bookmarks, profiles, infinite scrolling, image uploads, and SEO-optimized interface."
+        "items": {
+            "fettan": {
+                "title": "Fettan – Anonymous Chat Platform (2025)",
+                "description": "A Next.js 15/16 social platform self-hosted with Supabase, Redis, Shadcn/UI, Docker, Coolify, Nginx, and Cloudflare. Includes realtime chat, stories, moderation tools, badges, random matching, analytics, monitoring, and abuse prevention.",
+                "link": "fettan.net"
+            },
+            "news": {
+                "title": "LLM-powered News Application (2024)",
+                "description": "A full-stack news platform featuring authentication, categories, infinite feed, publisher filtering, bookmarks, reports, lists, search history, user activity tracking, Shadcn components, and server-side filtering.",
+                "link": "briefdigest.vercel.app"
+            },
+            "twitter": {
+                "title": "Twitter Clone (2023)",
+                "description": "A fully featured social media clone with tweets, likes, retweets, messaging, notifications, bookmarks, profiles, infinite scrolling, image uploads, and SEO-optimized interface.",
+                "link": "twitter.fatiharapoglu.com.tr"
+            }
+        },
+        "more": {
+            "text": "You can find more projects and recent work on my GitHub profile.",
+            "link": "View my GitHub work"
+        }
     },
     "FeaturedProject": {
         "title": "Project"
@@ -44,24 +54,38 @@
     },
     "EnterpriseSummary": {
         "title": "Work Experience",
-        "volthread-title": "Software & Integration Developer — Volthread Teknoloji A.Ş.",
-        "volthread-meta": "2023 – Present | Ankara, Turkey",
-        "volthread-bullet-1": "Internal HR app (React + Spring Boot + MongoDB): leave approvals, email templates, admin panels, CI/CD, and production deployments.",
-        "volthread-bullet-2": "TOFAŞ: Angular modules and Spring Boot APIs for vehicle programs.",
-        "volthread-bullet-3": "Şişecam & Ford: MuleSoft-based Salesforce and SAP integrations.",
-        "volthread-bullet-4": "ÇİMSA: Oracle OIC developments with OSB/SOA touchpoints and deployment checklists.",
-        "volthread-bullet-5": "Teknosa, CK Enerji, IBB: complex SOAP/REST flows, integration mappings, and transformation solutions.",
-        "volthread-tags": ["React", "Angular", "Spring Boot", "MongoDB", "MuleSoft", "Salesforce", "Oracle OIC", "Oracle OSB/SOA", "CI/CD"],
-        "odin-title": "Full-Stack Developer — The Odin Project (Self-taught)",
-        "odin-meta": "2021 – 2022 | Remote",
-        "odin-bullet-1": "Completed a comprehensive full-stack program covering HTML, CSS, JavaScript, React, and Node.js.",
-        "odin-bullet-2": "Built front-end and back-end projects to gain practical experience across the stack.",
-        "odin-bullet-3": "Solved coding challenges and participated in project-based learning to improve problem-solving and precision.",
-        "odin-bullet-4": "Developed a portfolio demonstrating responsive design, UX flow, and database integration.",
-        "odin-tags": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Full-stack", "Self-taught"],
-        "ilkalem-title": "Chemical Engineer — İlkalem Tic. San. A.Ş.",
-        "ilkalem-meta": "2018 – 2021 | Sakarya, Turkey",
-        "ilkalem-bullet-1": "Performed MATLAB-based simulations, statistical data analysis, and process optimization on large-scale datasets.",
-        "ilkalem-tags": ["MATLAB", "Process Design", "Data Analysis"]
+        "items": {
+            "volthread": {
+                "title": "Software & Integration Developer — Volthread Teknoloji A.Ş.",
+                "meta": "2023 – Present | Ankara, Turkey",
+                "bullets": [
+                    "Internal HR app (React + Spring Boot + MongoDB): leave approvals, email templates, admin panels, CI/CD, and production deployments.",
+                    "TOFAŞ: Angular modules and Spring Boot APIs for vehicle programs.",
+                    "Şişecam & Ford: MuleSoft-based Salesforce and SAP integrations.",
+                    "ÇİMSA: Oracle OIC developments with OSB/SOA touchpoints and deployment checklists.",
+                    "Teknosa, CK Enerji, IBB: complex SOAP/REST flows, integration mappings, and transformation solutions."
+                ],
+                "tags": ["React", "Angular", "Spring Boot", "MongoDB", "MuleSoft", "Salesforce", "Oracle OIC", "Oracle OSB/SOA", "CI/CD"]
+            },
+            "odin": {
+                "title": "Full-Stack Developer — The Odin Project (Self-taught)",
+                "meta": "2021 – 2022 | Remote",
+                "bullets": [
+                    "Completed a comprehensive full-stack program covering HTML, CSS, JavaScript, React, and Node.js.",
+                    "Built front-end and back-end projects to gain practical experience across the stack.",
+                    "Solved coding challenges and participated in project-based learning to improve problem-solving and precision.",
+                    "Developed a portfolio demonstrating responsive design, UX flow, and database integration."
+                ],
+                "tags": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Full-stack", "Self-taught"]
+            },
+            "ilkalem": {
+                "title": "Chemical Engineer — İlkalem Tic. San. A.Ş.",
+                "meta": "2018 – 2021 | Sakarya, Turkey",
+                "bullets": [
+                    "Performed MATLAB-based simulations, statistical data analysis, and process optimization on large-scale datasets."
+                ],
+                "tags": ["MATLAB", "Process Design", "Data Analysis"]
+            }
+        }
     }
 }
