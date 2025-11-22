@@ -5,9 +5,9 @@ import { notFound } from "next/navigation";
 import "../../styles/globals.scss";
 
 export const metadata = {
-    title: "Fatih Arapoğlu | Full-stack Developer",
-    description: "Personal portfolio of Fatih Arapoğlu, made in 2023.",
-    keywords: "portfolio, fatih, arapoğlu, arapoglu, fatih arapoglu, fatih arapoğlu, fettan, website",
+    title: "Fatih Arapoğlu | Full-Stack & Integration Developer",
+    description: "Full-Stack & Integration Developer delivering enterprise integrations, self-hosted platforms, and modern web products.",
+    keywords: "Fatih Arapoğlu, integration developer, full-stack developer, Next.js, MuleSoft, Salesforce, Supabase, Fettan, Ankara",
     author: "Fatih Arapoğlu",
 };
 
@@ -42,13 +42,7 @@ const robotoMono = localFont({
     variable: "--font-roboto-mono",
 });
 
-export default async function RootLayout({
-    children,
-    params: { locale },
-}: {
-    children: React.ReactNode;
-    params: { locale: string };
-}) {
+export default async function RootLayout({ children, params: { locale } }: { children: React.ReactNode; params: { locale: string } }) {
     let messages;
 
     try {

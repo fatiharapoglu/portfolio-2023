@@ -61,10 +61,10 @@ export default function Header() {
                 <motion.li
                     initial={{ y: -100 }}
                     animate={{ y: 0 }}
-                    transition={{ duration: 0.3, delay: 0.75 }}
+                    transition={{ duration: 0.3, delay: 0.5 }}
                     className="animated-link text-slate-300 transition-colors duration-300 hover:text-amber-200"
                 >
-                    <button onClick={() => smoothScroll("toolbox")}>
+                    <button onClick={() => smoothScroll("enterprise")}>
                         <span className=" text-amber-100">2.</span>
                         {t("link-2")}
                     </button>
@@ -72,7 +72,7 @@ export default function Header() {
                 <motion.li
                     initial={{ y: -100 }}
                     animate={{ y: 0 }}
-                    transition={{ duration: 0.3, delay: 0.5 }}
+                    transition={{ duration: 0.3, delay: 0.25 }}
                     className="animated-link text-slate-300 transition-colors duration-300 hover:text-amber-200"
                 >
                     <button onClick={() => smoothScroll("projects")}>

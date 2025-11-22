@@ -16,9 +16,8 @@ export default function Contact() {
             <Title count={4} title={t("title")} />
 
             <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} viewport={{ once: true }} className="mb-4 flex flex-col items-center justify-center">
-                <h1 className="mb-4 text-center text-3xl font-bold text-slate-300">{t("contact-8")}</h1>
-                <p className="mb-1 text-center text-sm md:text-base">{t("contact-9")}</p>
-                <p className="mb-4 text-center text-sm md:text-base">{t("contact-10")}</p>
+                <p className="mb-2 text-center text-sm md:text-base">{t("intro")}</p>
+                <p className="mb-4 text-center text-sm md:text-base text-slate-300">{t("cta")}</p>
                 <Socials />
             </motion.div>
 
