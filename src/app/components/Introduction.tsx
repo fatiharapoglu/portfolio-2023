@@ -25,7 +25,7 @@ export default function Introduction() {
                 {t("role")}
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.8 }} className="w-2/3 text-sm lg:text-base">
-                <p className=" text-lg text-slate-400">{t("body")}</p>
+                <p className="text-lg text-slate-400">{t.rich("body", { strong: (chunks) => <strong className="text-slate-200">{chunks}</strong> })}</p>
             </motion.div>
             <motion.button
                 initial={{ opacity: 0 }}

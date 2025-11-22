@@ -54,7 +54,10 @@ export default function EnterpriseSummary() {
                                 </div>
                                 <div className="flex flex-col gap-3">
                                     <div className="flex flex-col gap-2">
-                                        <h3 className="text-lg font-semibold text-slate-300">{t(`${baseKey}.title`)}</h3>
+                                        <h3 className="text-lg font-semibold text-slate-300">
+                                            {t(`${baseKey}.titlePrefix`)}
+                                            <span className="italic font-normal text-slate-400"> {t(`${baseKey}.titleOrg`)}</span>
+                                        </h3>
                                     </div>
                                     <ul className="mt-2 space-y-2 text-sm text-slate-200">
                                         {bullets.map((bullet, idx) => (

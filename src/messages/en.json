@@ -9,14 +9,14 @@
         "badge": "Hi, I'm",
         "name": "Fatih Arapoğlu",
         "role": "Full-Stack & Integration Developer",
-        "body": "A software developer building end-to-end solutions with JavaScript/TypeScript, React, Next.js, Node.js, and integration technologies.",
+        "body": "A software developer building <strong>end-to-end solutions</strong> with JavaScript/TypeScript, React, Next.js, Node.js, and integration technologies.",
         "cta": "Explore my projects"
     },
     "About": {
         "title": "About Me",
-        "paragraph-1": "I'm a Full-Stack & Integration Developer who builds end-to-end solutions using modern web technologies and integration layers.",
-        "paragraph-2": "I began my career as a chemical engineer, working in process management and data analysis. That experience with problem-solving and structured thinking naturally led me into software development. I started with enterprise integration projects, gaining experience in data integrity, API architectures, and flow management for large-scale systems. Over time, I carried that expertise into product development—designing not just systems, but also user-facing applications.",
-        "paragraph-3": "Today, I develop both front-end and back-end solutions using tools like Next.js, React, Node.js, and TypeScript, while also working on self-hosted infrastructure, CI/CD pipelines, database design, and deployment architectures.",
+        "paragraph-1": "I'm a <strong>Full-Stack & Integration Developer</strong> who builds <strong>end-to-end solutions</strong> using modern web technologies and integration layers.",
+        "paragraph-2": "I began my career as a chemical engineer, working in process management and data analysis. That experience with problem-solving and structured thinking naturally led me into software development. I started with <strong>enterprise integration projects</strong>, gaining experience in <strong>data integrity, API architectures, and flow management</strong> for large-scale systems. Over time, I carried that expertise into product development—designing not just systems, but also user-facing applications.",
+        "paragraph-3": "Today, I develop both front-end and back-end solutions using tools like <strong>Next.js, React, Node.js, and TypeScript</strong>, while also working on <strong>self-hosted infrastructure, CI/CD pipelines, database design, and deployment architectures</strong>.",
         "paragraph-4": "I value taking a project from concept to production, understanding every layer of the system, and collaborating effectively to deliver meaningful results.",
         "paragraph-5": "I’m based in Ankara, Turkey. Outside of work, I enjoy making music, playing video games, and exploring new technologies."
     },
@@ -56,7 +56,8 @@
         "title": "Work Experience",
         "items": {
             "volthread": {
-                "title": "Software & Integration Developer — Volthread Teknoloji A.Ş.",
+                "titlePrefix": "Software & Integration Developer —",
+                "titleOrg": "Volthread Teknoloji A.Ş.",
                 "meta": "2023 – Present | Ankara, Turkey",
                 "bullets": [
                     "Internal HR app (React + Spring Boot + MongoDB): leave approvals, email templates, admin panels, CI/CD, and production deployments.",
@@ -68,7 +69,8 @@
                 "tags": ["React", "Angular", "Spring Boot", "MongoDB", "MuleSoft", "Salesforce", "Oracle OIC", "Oracle OSB/SOA", "CI/CD"]
             },
             "odin": {
-                "title": "Full-Stack Developer — The Odin Project (Self-taught)",
+                "titlePrefix": "Full-Stack Developer —",
+                "titleOrg": "The Odin Project",
                 "meta": "2021 – 2022 | Remote",
                 "bullets": [
                     "Completed a comprehensive full-stack program covering HTML, CSS, JavaScript, React, and Node.js.",
@@ -79,11 +81,10 @@
                 "tags": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Full-stack", "Self-taught"]
             },
             "ilkalem": {
-                "title": "Chemical Engineer — İlkalem Tic. San. A.Ş.",
+                "titlePrefix": "Chemical Engineer —",
+                "titleOrg": "İlkalem Tic. San. A.Ş.",
                 "meta": "2018 – 2021 | Sakarya, Turkey",
-                "bullets": [
-                    "Performed MATLAB-based simulations, statistical data analysis, and process optimization on large-scale datasets."
-                ],
+                "bullets": ["Performed MATLAB-based simulations, statistical data analysis, and process optimization on large-scale datasets."],
                 "tags": ["MATLAB", "Process Design", "Data Analysis"]
             }
         }

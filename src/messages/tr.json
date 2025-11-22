@@ -9,14 +9,14 @@
         "badge": "Merhaba, ben",
         "name": "Fatih Arapoğlu",
         "role": "Full-Stack & Entegrasyon Geliştiricisi",
-        "body": "JavaScript/TypeScript, React, Next.js, Node.js ve entegrasyon teknolojileriyle uçtan uca çözümler geliştiren bir yazılım geliştiricisiyim.",
+        "body": "JavaScript/TypeScript, React, Next.js, Node.js ve entegrasyon teknolojileriyle <strong>uçtan uca çözümler</strong> geliştiren bir yazılım geliştiricisiyim.",
         "cta": "Proje çalışmalarımı inceleyin"
     },
     "About": {
         "title": "Hakkımda",
-        "paragraph-1": "Modern web teknolojileri ve entegrasyon katmanlarıyla uçtan uca çözümler geliştiren bir Full-Stack & Entegrasyon Geliştiricisiyim.",
-        "paragraph-2": "Kariyerime kimya mühendisi olarak başladım. Süreç yönetimi, veri analizi ve problem çözme konularındaki bu mühendislik deneyimi, zamanla ilgimi yazılım geliştirmeye yöneltti. Yazılım alanında kurumsal entegrasyon projeleriyle başladım; büyük ölçekli sistemlerde veri bütünlüğü, API mimarileri ve akış yönetimi konularında deneyim kazandım. Sonrasında bu tecrübeyi ürün geliştirme tarafına taşıyarak, sadece sistemleri değil, kullanıcıya dokunan ürünleri de tasarlamaya başladım.",
-        "paragraph-3": "Bugün, Next.js, React, Node.js ve TypeScript gibi modern araçlarla arayüz ve backend geliştirmeleri yapıyor; aynı zamanda self-hosted altyapılar, CI/CD süreçleri, veritabanı tasarımı ve dağıtım mimarileri üzerinde çalışıyorum.",
+        "paragraph-1": "Modern web teknolojileri ve entegrasyon katmanlarıyla <strong>uçtan uca çözümler</strong> geliştiren bir <strong>Full-Stack & Entegrasyon Geliştiricisiyim.</strong>",
+        "paragraph-2": "Kariyerime kimya mühendisi olarak başladım. Süreç yönetimi, veri analizi ve problem çözme konularındaki bu mühendislik deneyimi, zamanla ilgimi yazılım geliştirmeye yöneltti. Yazılım alanında <strong>kurumsal entegrasyon projeleriyle</strong> başladım; büyük ölçekli sistemlerde <strong>veri bütünlüğü, API mimarileri ve akış yönetimi</strong> konularında deneyim kazandım. Sonrasında bu tecrübeyi ürün geliştirme tarafına taşıyarak, sadece sistemleri değil, kullanıcıya dokunan ürünleri de tasarlamaya başladım.",
+        "paragraph-3": "Bugün, <strong>Next.js, React, Node.js ve TypeScript</strong> gibi modern araçlarla arayüz ve backend geliştirmeleri yapıyor; aynı zamanda <strong>self-hosted altyapılar, CI/CD süreçleri, veritabanı tasarımı ve dağıtım mimarileri</strong> üzerinde çalışıyorum.",
         "paragraph-4": "Bir projeyi fikirden üretime taşıyabilmeyi, sistemin her katmanını anlamayı ve bu süreçte ekiplerle ortak şekilde ilerlemeyi önemsiyorum.",
         "paragraph-5": "Ankara’da yaşıyorum. Kod yazmadığım zamanlarda müzikle uğraşır, video oyunları oynar veya yeni teknolojiler denerim."
     },
@@ -56,7 +56,8 @@
         "title": "Çalışma Deneyimi",
         "items": {
             "volthread": {
-                "title": "Yazılım & Entegrasyon Geliştiricisi — Volthread Teknoloji A.Ş.",
+                "titlePrefix": "Yazılım & Entegrasyon Geliştiricisi —",
+                "titleOrg": "Volthread Teknoloji A.Ş.",
                 "meta": "2023 – Güncel | Ankara, Türkiye",
                 "bullets": [
                     "Internal İnsan Kaynakları Uygulaması (React + Spring Boot + MongoDB): izin onayları, e-posta şablonları, admin panelleri, CI/CD ve prod dağıtımları.",
@@ -68,7 +69,8 @@
                 "tags": ["React", "Angular", "Spring Boot", "MongoDB", "MuleSoft", "Salesforce", "Oracle OIC", "Oracle OSB/SOA", "CI/CD"]
             },
             "odin": {
-                "title": "Full-Stack Developer — The Odin Project",
+                "titlePrefix": "Full-Stack Developer —",
+                "titleOrg": "The Odin Project",
                 "meta": "2021 – 2022 | Remote",
                 "bullets": [
                     "HTML, CSS, JavaScript, React ve Node.js kapsayan kapsamlı bir full-stack eğitiminin tamamlanması.",
@@ -79,7 +81,8 @@
                 "tags": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Full-stack", "Self-taught"]
             },
             "ilkalem": {
-                "title": "Kimya Mühendisi — İlkalem Tic. San. A.Ş.",
+                "titlePrefix": "Kimya Mühendisi —",
+                "titleOrg": "İlkalem Tic. San. A.Ş.",
                 "meta": "2018 – 2021 | Sakarya, Türkiye",
                 "bullets": [
                     "MATLAB ile büyük veri setlerinde simülasyon, istatistiksel değerlendirme ve süreç optimizasyonu."
