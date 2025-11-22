@@ -34,7 +34,7 @@ export const starField = () => {
     let stars = makeStars(10000);
 
     const clear = () => {
-        c.fillStyle = "rgb(15 23 42)";
+        c.fillStyle = "rgb(2 6 23)";
         c.fillRect(0, 0, canvas.width, canvas.height);
     };
 

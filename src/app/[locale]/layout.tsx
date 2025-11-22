@@ -55,7 +55,7 @@ export default async function RootLayout({ children, params: { locale } }: { chi
         <html lang={locale}>
             <body
                 className={`${oxygen.className} ${robotoMono.variable}
-                    relative overflow-x-hidden scroll-smooth bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-blue-300 selection:text-blue-900`}
+                    relative overflow-x-hidden scroll-smooth bg-slate-950 leading-relaxed text-slate-400 antialiased selection:bg-blue-300 selection:text-blue-900`}
             >
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     {children}

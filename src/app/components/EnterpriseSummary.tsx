@@ -31,7 +31,7 @@ export default function EnterpriseSummary() {
                 className="text-sm md:text-base"
             >
                 <div className="relative mt-4 flex flex-col gap-12">
-                    <div className="pointer-events-none absolute left-3 top-0 hidden h-full border-l border-slate-800/60 md:block" aria-hidden />
+                    <div className="pointer-events-none absolute left-1.5 top-0 hidden h-full border-l border-slate-800/60 md:block" aria-hidden />
                     {roles.map((role) => {
                         const baseKey = `items.${role}`;
                         const meta = t(`${baseKey}.meta`);
@@ -41,7 +41,7 @@ export default function EnterpriseSummary() {
                         return (
                             <div key={role} className="grid items-start gap-4 md:grid-cols-[180px_1fr] md:gap-10">
                                 <div className="relative pl-6 md:pl-0 md:text-right">
-                                    <span className="absolute left-0 top-1 hidden h-3 w-3 rounded-full border border-amber-200 bg-slate-950 md:block" />
+                                    <span className="absolute left-0 top-1/2 hidden h-3 w-3 -translate-y-1/2 rounded-full border border-amber-200 bg-slate-950 md:block" />
                                     {(() => {
                                         const [dateLine, locationLine] = splitMeta(meta);
                                         return (
@@ -71,7 +71,7 @@ export default function EnterpriseSummary() {
                                         {tags.map((tag: string) => (
                                             <span
                                                 key={`${role}-tag-${tag}`}
-                                                className="font-roboto-mono inline-flex items-center rounded-full border border-slate-800/70 bg-slate-800/40 px-3 py-1 text-[11px] tracking-[0.08em] text-amber-100 shadow-inner shadow-black/20"
+                                                className="font-roboto-mono inline-flex items-center rounded-full border border-slate-800/60 bg-slate-900/40 px-3 py-1 text-[11px] tracking-[0.08em] text-amber-100 shadow-inner shadow-black/20"
                                             >
                                                 {tag}
                                             </span>

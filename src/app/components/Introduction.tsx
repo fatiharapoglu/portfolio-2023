@@ -31,7 +31,7 @@ export default function Introduction() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 1.25 }}
-                className="font-roboto-mono mt-6 inline-flex gap-2 self-start rounded border border-slate-800/90 bg-slate-900 px-8 py-4 text-slate-300 shadow-xl transition-all duration-300 hover:bg-slate-800/90"
+                className="font-roboto-mono mt-6 inline-flex gap-2 self-start rounded border border-slate-800/70 bg-slate-900/60 px-8 py-4 text-slate-300 shadow-xl transition-all duration-300 hover:bg-slate-900/80"
                 onClick={() => smoothScroll("projects")}
             >
                 {t("cta")}

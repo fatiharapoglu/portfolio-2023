@@ -32,7 +32,7 @@ export default function Header() {
         <header
             className={`${
                 isHidden ? "header-hidden" : "header-visible"
-            } sticky top-0 z-50 flex h-16 w-full items-center justify-between bg-slate-900/90 bg-gradient-to-b from-slate-950/50 to-slate-900/90 px-4 text-xs shadow-sm backdrop-blur-sm md:h-20 md:px-20 md:text-sm`}
+            } sticky top-0 z-50 flex h-16 w-full items-center justify-between border-b border-slate-900/50 bg-slate-950/85 bg-gradient-to-b from-slate-950/95 via-slate-950/80 to-slate-900/55 px-4 text-xs shadow-sm backdrop-blur-sm md:h-20 md:px-20 md:text-sm`}
         >
             <motion.div
                 initial={{ opacity: 0, mixBlendMode: "lighten" }}

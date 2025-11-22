@@ -58,7 +58,7 @@ export default function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="font-roboto-mono mt-8 flex flex-col items-center rounded-xl border border-slate-800/90 bg-slate-900/60 p-6 text-center text-sm text-slate-300 shadow-xl md:text-base"
+                className="font-roboto-mono mt-8 flex flex-col items-center rounded-xl border border-slate-800/70 bg-slate-900/45 p-6 text-center text-sm text-slate-300 shadow-xl md:text-base"
             >
                 <p>{t("more.text")}</p>
                 <a href="https://github.com/fatiharapoglu" target="_blank" className="animated-link mt-2 font-semibold text-amber-100 transition-colors duration-300 hover:text-amber-200">

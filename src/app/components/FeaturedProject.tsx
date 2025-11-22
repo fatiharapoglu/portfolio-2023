@@ -41,10 +41,10 @@ export default function FeaturedProject({ liveLink, sourceLink, imageSrc, builtW
             <a href={liveLink} target="_blank" className={`text-3xl font-bold text-slate-200 transition-colors duration-300 hover:text-amber-200 ${align === "right" ? "self-end" : "self-start"}`}>
                 {title}
             </a>
-            <div className="rounded-lg border border-slate-800/90 bg-slate-800/50 p-4 text-sm shadow-xl md:text-base">{description}</div>
+            <div className="rounded-lg border border-slate-800/70 bg-slate-900/50 p-4 text-sm shadow-xl md:text-base">{description}</div>
             <div className={`font-roboto-mono flex flex-wrap gap-1 text-xs text-amber-100 ${align === "right" ? "justify-end" : "justify-start"}`}>
                 {builtWith.map((tech) => (
-                        <span key={`${title}-${tech}`} className="inline-flex items-center justify-center rounded-full border border-slate-800/90 bg-slate-800/50 px-2 py-1 shadow-xl">
+                        <span key={`${title}-${tech}`} className="inline-flex items-center justify-center rounded-full border border-slate-800/70 bg-slate-900/45 px-2 py-1 shadow-xl">
                             {tech}
                         </span>
                     ))}
